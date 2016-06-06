@@ -1,0 +1,5 @@
+.idea
+out/
+*.swp
+module_biovalidator.xml
+*.properties

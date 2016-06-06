@@ -1,0 +1,8 @@
+path.variable.maven_repository=
+jdk.home.1.6=
+idea.home=
+Class-Path=forms_rt.jar commons-digester.jar commons-beanutils.jar commons-logging.jar OpenXLS-6.0.6.jar commons-collections.jar asm.jar
+Program-Version=0.1
+sourcepath=
+srcdir=.
+
