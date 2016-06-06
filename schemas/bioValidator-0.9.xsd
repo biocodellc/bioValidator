@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="Validate">
+<xs:complexType>
+<xs:sequence>
+
+	<xs:element name="Metadata" type="metaData">
+  	</xs:element>
+
+	<xs:element name="Worksheet" type="ruleSet" maxOccurs="unbounded">
+  	</xs:element>
+
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<!-- The format for the ruleSet -->
+<xs:complexType name="ruleSet">
+   	<xs:sequence>
+	<!-- rule definitions -->
+  	<xs:element name="rule" maxOccurs="unbounded">
+   	<xs:complexType>
+	<!-- field is the generic data holder for most rules -->
+   		<xs:sequence>
+			<xs:element name="field" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+   		</xs:sequence>
+		<!-- Rule Type defines the function to be called for validation -->
+		<xs:attribute name="type" type="xs:string" use="required"/>
+		<xs:attribute name="name" type="xs:string"/>
+		<xs:attribute name="plateName" type="xs:string"/>
+		<xs:attribute name="wellNumber" type="xs:string"/>
+		<xs:attribute name="decimalLatitude" type="xs:string"/>
+		<xs:attribute name="decimalLongitude" type="xs:string"/>
+		<xs:attribute name="maxErrorInMeters" type="xs:string"/>
+		<xs:attribute name="horizontalDatum" type="xs:string"/>
+		<xs:attribute name="list" type="xs:string"/>
+	        <xs:attribute name="level" type="SetLevels" use="required"/>
+   	</xs:complexType>
+  	</xs:element>
+
+ 	</xs:sequence>
+	    <!-- This is the name of the Worksheet -->
+	    <xs:attribute name="sheetname" use="required"/>
+</xs:complexType>
+
+<!-- The format for the metaData -->
+<xs:complexType name="metaData">
+    <xs:sequence>
+        <xs:element name="metadata" maxOccurs="unbounded" minOccurs="0">
+   	    <xs:complexType>
+   	        <xs:sequence>
+	            <xs:element name="field" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+   	        </xs:sequence>
+	        <xs:attribute name="name" type="xs:string"/>
+	        <xs:attribute name="alias" type="xs:string"/>
+   	    </xs:complexType>
+        </xs:element>
+    </xs:sequence>
+</xs:complexType>
+
+<!-- Message Level to display, warning or error -->
+<xs:simpleType name="SetLevels">
+	<xs:restriction base="xs:string">
+   		<xs:enumeration value="error"/>
+    	        <xs:enumeration value="warning"/>
+  	</xs:restriction>
+</xs:simpleType>
+
+</xs:schema>
+

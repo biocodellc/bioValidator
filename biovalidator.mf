@@ -1,0 +1,2 @@
+Main-Class: edu.berkeley.edu.bioValidator
+One-Jar-Main-Class: edu.berkeley.biocode.bioValidator.mainPage.Main

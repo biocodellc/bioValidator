@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="validationSchemas">
+<xs:complexType>
+<xs:sequence>
+
+<xs:element name="validationSchema" type="schemaSet" maxOccurs="unbounded" minOccurs="0">
+</xs:element>
+
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:complexType name="schemaSet">
+<xs:complexContent>
+		<xs:attribute name="description" type="xs:string" use="required"/>
+		<xs:attribute name="name" type="xs:string" use="required"/>
+		<xs:attribute name="url" type="xs:string" use="required"/>
+		<xs:attribute name="XSDUrl" type="xs:string" use="required"/>
+		<xs:attribute name="XSDName" type="xs:string" use="required"/>
+		<xs:attribute name="contact_name" type="xs:string" use="required"/>
+		<xs:attribute name="contact_email" type="xs:string" use="required"/>
+		<xs:attribute name="contact_phone" type="xs:string" use="required"/>
+</xs:complexContent>
+</xs:complexType>
+
+
+</xs:schema>

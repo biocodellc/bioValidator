@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Validate xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='bioValidator-0.8.xsd'>
+
+<Metadata>
+
+<metadata name='displayFieldsSpreadsheet'>
+<field>Sample_Name</field>
+<field>Description</field>
+<field>Title</field>
+<field>Collection_date</field>
+</metadata>
+
+<metadata name='displayFieldsDB'>
+<field>Sample_Name</field>
+<field>Description</field>
+<field>Title</field>
+<field>Collection_date</field>
+</metadata>
+
+<metadata name='list1' alias='boolean'>
+<field>y</field>
+<field>n</field>
+</metadata>
+
+<metadata name='list2' alias='Country'>
+<field></field>
+<field>American Samoa</field>
+<field>Cook Islands</field>
+</metadata>
+
+</Metadata>
+
+<Worksheet sheetname='Sample'>
+
+<rule type='RequiredColumns' name='RequiredColumns' level='error'>
+<field>Sample_Name</field>
+<field>Description</field>
+<field>Taxon_ID</field>
+<field>Title</field>
+<field>Altitude</field>
+<field>Assigned_from_geo</field>
+<field>Collection_date</field>
+<field>Country </field>
+<field>Depth</field>
+<field>Elevation</field>
+<field>Env_Biome</field>
+<field>Env_Feature</field>
+<field>Env_Matter</field>
+<field>Extracted_dna_available_now</field>
+<field>Latitude</field>
+<field>Longitude</field>
+<field>Physical_sample_available_now</field>
+<field>Public</field>
+</rule>
+
+<rule type='uniqueValue' name='Sample_Name' level='error'></rule>
+
+<rule type='isNumber' name='Depth' level='error'></rule>
+
+<rule type='isNumber' name='Elevation' level='error'></rule>
+
+<rule type='checkInXMLFields' name='Assigned_from_geo' level='error' list='list1'></rule>
+
+<rule type='checkInXMLFields' name='Extracted_dna_available_now' level='error' list='list1'></rule>
+
+<rule type='checkInXMLFields' name='Physical_sample_available_now' level='error' list='list1'></rule>
+
+<rule type='checkInXMLFields' name='Public' level='error' list='list1'></rule>
+
+<rule type='DwCLatLngChecker'
+    decimalLatitude='Latitude'
+    decimalLongitude='Longitude' level='warning'></rule>
+
+</Worksheet>
+
+</Validate>

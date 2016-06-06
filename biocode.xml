@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Validate>
+<Specimens>
+        <rule type="checkForGuid" name="guid"></rule>
+        <rule type="RequiredColumns" name="RequiredColumns">
+                <field>Coll_EventID_collector</field>
+                <field>EnteredBy</field>
+                <field>Specimen_Num_Collector</field>
+                <field>Phylum</field>
+                <field>HoldingInstitution</field>
+        </rule>
+        <rule type="checkInXMLFields" name="LowestTaxonLevel">
+                <field>Kingdom</field>
+                <field>Phylum</field>
+                <field>Subphylum</field>
+                <field>Superclass</field>
+                <field>Class</field>
+                <field>Subclass</field>
+                <field>Infraclass</field>
+                <field>Superorder</field>
+                <field>Ordr</field>
+                <field>Suborder</field>
+                <field>Infraorder</field>
+                <field>Superfamily</field>
+                <field>Family</field>
+                <field>Subfamily</field>
+                <field>Tribe</field>
+                <field>Subtribe</field>
+                <field>Genus</field>
+                <field>Genus_and_Species</field>
+                <field>Subgenus</field>
+                <field>SpecificEpithet</field>
+                <field>SubspecificEpithet</field>
+        </rule>
+        <rule type="checkInXMLFields" name="HoldingInstitution">
+                <field>Museum of Vertebrate Zoology</field>
+                <field>Florida Museum of Natural History</field>
+                <field>Smithsonian Institution</field>
+        </rule>
+        <rule type="checkInXMLFields" name="Phylum">
+                <field>Chordata</field>
+                <field>Arthropoda</field>
+                <field>Mollusca</field>
+                <field>Porifera</field>
+                <field>Bryozoa</field>
+                <field>Cnidaria</field>
+                <field>Echinodermata</field>
+                <field>Annelida</field>
+                <field>Platyhelminthes</field>
+                <field>Hemichordata</field>
+                <field>Sipuncula</field>
+                <field>Nemertea</field>
+                <field>Tracheophyta</field>
+                <field>Chaetognatha</field>
+                <field>Pectinidae</field>
+                <field>Granuloreticulosa</field>
+                <field>Chlorophyta</field>
+                <field>Rhodophyta</field>
+                <field>Phaeophyta</field>
+                <field>Magnoliophyta</field>
+                <field>Anthophyta</field>
+                <field>Protista</field>
+                <field>Ctenophora</field>
+                <field>Nematoda</field>
+        </rule>
+        <rule type="uniqueValue" name="Specimen_Num_Collector"></rule>
+
+        <rule type="checkMatchingFieldNameInSecondarySheet" name="Coll_EventID_collector"></rule>
+</Specimens>
+<Collecting_Events>
+        <rule type="checkForGuid" name="guid"></rule>
+        <rule type="RequiredColumns" name="RequiredColumns">
+                <field>Coll_EventID_collector</field>
+                <field>EnteredBy</field>
+                <field>Country</field>
+                <field>YearCollected</field>
+                <field>MonthCollected</field>
+        </rule>
+    <rule type="uniqueValue" name="Coll_EventID_collector"></rule>
+
+</Collecting_Events>
+</Validate>

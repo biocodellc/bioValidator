@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Validate xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='bioValidator-0.8.xsd'>
+
+<Metadata>
+
+</Metadata>
+
+<Worksheet sheetname='Voucher Info'>
+	<rule type='RequiredColumns' name='RequiredColumns' level='error'>
+		<field>Sample ID</field>
+		<field>Field ID</field>
+                <field>Museum voucher ID</field>
+		<field>Institution Storing</field>
+	</rule>
+
+</Worksheet>
+
+<Worksheet sheetname='Taxonomy'>
+
+	<rule type='RequiredColumns' name='RequiredColumns' level='error'>
+		<field>Phylum</field>
+	</rule>
+
+	<rule type='checkInXMLFields' name='Phylum' level='warning'>
+		<field>Annelida</field>
+		<field>Arthropoda</field>
+		<field>Brachiopoda</field>
+		<field>Bryozoa</field>
+		<field>Chaetognatha</field>
+		<field>Chlorophyta</field>
+		<field>Chordata</field>
+		<field>Ciliophora</field>
+		<field>Cnidaria</field>
+		<field>Coniferophyta</field>
+		<field>Ctenophora</field>
+		<field>Cycadophyta</field>
+		<field>Echinodermata</field>
+		<field>Entoprocta</field>
+		<field>Gastrotricha</field>
+		<field>Gnathostomulida</field>
+		<field>Granuloreticulosa</field>
+		<field>Hemichordata</field>
+		<field>Magnoliophyta</field>
+		<field>Metazoa</field>
+		<field>Mollusca</field>
+		<field>Myxozoa</field>
+		<field>Nematoda</field>
+		<field>Nemertea</field>
+		<field>Phaeophyta</field>
+		<field>Phoronida</field>
+		<field>Pinophyta</field>
+		<field>Placozoa</field>
+		<field>Platyhelminthes</field>
+		<field>Porifera</field>
+		<field>Protista</field>
+		<field>Pteridophyta</field>
+		<field>Rhizaria</field>
+		<field>Rhodophyta</field>
+		<field>Rotifera</field>
+		<field>Sarcomastigophora</field>
+		<field>Sipuncula</field>
+		<field>Tardigrada</field>
+		<field>Tracheophyta</field>
+		<field>PlaceHolder</field>
+	</rule>
+
+	<rule type='uniqueValue' name='format_name96,well_number96' level='error'></rule>
+
+</Worksheet>
+
+<Worksheet sheetname='Collection Data'>
+
+	<rule type='RequiredColumns' name='RequiredColumns' level='error'>
+		<field>Country</field>
+	</rule>
+
+	<rule type='DwCLatLngChecker'
+        decimalLatitude='DecimalLatitude'
+        decimalLongitude='DecimalLongitude'
+        maxErrorInMeters='MaxErrorInMeters'
+        horizontalDatum='HorizontalDatum' level='warning'></rule>
+
+	<rule type='checkInXMLFields' name='HorizontalDatum' level='warning'>
+		<field>WGS1984</field>
+		<field>NAD1927</field>
+		<field>NAD1983</field>
+		<field>unknown</field>
+	</rule>
+
+	<!-- Two rules for example only, edit these when i get actual BOLD spreadsheet -->
+	<rule type='isNumber' name='MinElevationMeters' level='error'></rule>
+	<rule type='checkInXMLFields' name='Country' level='warning' list='list5'></rule>
+</Worksheet>
+
+</Validate>
+

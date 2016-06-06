@@ -1,0 +1,58 @@
+<center><h3>bioValidator:  A Field Data Validation Tool</h3>
+<p>
+John Deck  (jdeck [at] berkeley [dot] edu)
+<br>
+Joyce Gross (jgross [at] berkeley [dot] edu) </center>
+
+<table><tr><td>
+<img src='http://biovalidator.sourceforge.net/SplashScreenWeb.gif'>
+</td>
+<td>
+<table><tr><td>
+bioValidator development is supported by the Moorea Biocode project through a grant by the <a href="http://www.moore.org/">Gordon and Betty Moore Foundation</a> and is meant to support large scale field data collection efforts for any biological organisms and any field expedition.  We are striving to validate data at the source of data collection in a manner that is as easy possible for biologists yet maintains a core set of rules for your project.  To this end, we have opted to push all data additions and editing to Microsoft Excel. To adapt bioValidator for your expedition, please contact one of the developers above.  Included in bioValidator is a photo-matcher, which is a visual method for matching photos with spreadsheet elements and renames photos according to Collector's Specimen Numbers.
+</td></tr><tr><td>
+<b>Getting Started:</b> <a href='https://sourceforge.net/projects/biovalidator/'>Download latest release</a>.  bioValidator installs and runs in a single file.  It is reccomended, however, that you create its own directory when downloading it.  If you have Java 1.5 or later installed on your computer, everything will run fine.  Otherwise, you will need to download and install <a href="http://www.java.com/en/download/manual.jsp">Java 1.5</a>
+</td></tr><tr><td>
+<b>Entering Data For Biocode:</b> <a href='http://biocode.berkeley.edu/excel/BiocodeTemplate.xls'>Download Biocode Excel Template</a> and view <a href="http://biocode.berkeley.edu/batch_upload_help.html">instructions for entering data</a>. 
+</td></tr><tr><td>
+<b>Developers:</b> View the <a href="http://biocode.berkeley.edu/bioValidator-0.7.xsd">XSD Schema</a> defining rules for XML validation files.
+</td></tr></table>
+</td>
+</tr>
+</table>
+<p>
+<hr>
+<center><b>How to run bioValidator (text instructions follow the youtube clips)</b></center>
+
+<p><a href='http://www.youtube.com/v/Fgyg7A7JA-Y&hl=en&fs=1"'>YouTube clip: Instructions on downloading and installing the bioValidator application</a>
+<br><object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/Fgyg7A7JA-Y&hl=en&fs=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/Fgyg7A7JA-Y&hl=en&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object>
+
+<p><a href='http://www.youtube.com/v/a_vGOsbI6Zw&hl=en&fs=1'>YouTube clip: Downloading the Excel template and performing a data validation</a>
+<br><object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/a_vGOsbI6Zw&hl=en&fs=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/a_vGOsbI6Zw&hl=en&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object>
+
+<p><a href='http://www.youtube.com/v/RzQ-Tqq244Y&hl=en&fs=1'>YouTube clip: How to Photomatch<a>
+<br><object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/RzQ-Tqq244Y&hl=en&fs=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/RzQ-Tqq244Y&hl=en&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object>
+
+<p>
+<b>Building rules for data validation</b>
+<p>
+Data validation is based on a set of rules that are defined in an XML file.  Each rule can be set to a level of "Error", which means that no  downstream processing or PhotoMatching can occur, or "Warning" which means that this is an issue that can be fixed later and not critical for fixing immediately.    Tools for building validation XML files are forthcoming in later releases.  Meanwhile, it is important to know that all XML rules files themselves are validated against an <a href="http://biocode.berkeley.edu/bioValidator">XSD schema document</a>
+<p>
+<b>Validating Data</b>
+<p>
+You must first download the appropriate Excel Template file to begin entering data.  The excel template and instructions for filling it out are available on the <a href="http://biocode.berkeley.edu/batch_upload_help.html">Biocode Website</a>.  Once you have entered some data, you can validate it by opening bioValidator and clicking on "Load Spreadsheet".  You can use the tools on the screen to view errors and/or warnings.  Once you fix any errors or warning, save your spreadsheet and re-load it by clicking on "Load Spreadsheet" again.
+<p>
+<b>PhotoMatching</b>
+<p>
+In order to photomatch, you must first have a spreadsheet that has passed validation with no errors (though you may proceed with warnings).   Click on the "Input Directory" to choose a directory that contains your photos.  bioValidator will not modify photos in this directory, but it will create a subdirectory called ".bvthumbs" which the application uses to display thumbnails.  Once you have loaded a directory, choose an output directory by clicking on "Output Directory".  This directory will store photos that have been renamed during the matching processes.  Create matches of photos to specimens by scrolling through each and pressing Control & the mouse click button at the same time.  You will see photos copied to each specimen.
+<p>
+Note that if you have an output directory with appropriately named photos  that have already gone through the photomatching processing, they will appear under the specimen information.
+
+<p>
+<b>PhotoLoading</b>
+<p>
+Currently in development.
+<p>
+<p>
+<hr>
+

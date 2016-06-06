@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Validate xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='bioValidator-0.8.xsd'>
+
+<Metadata>
+
+<metadata name='displayFieldsSpreadsheet'>
+<field>Tree Tag No.</field>
+<field>Sample Number</field>
+<field>Genus</field>
+<field>Species</field>
+</metadata>
+
+<metadata name='displayFieldsDB'>
+<field>specimen_num_collector</field>
+<field>Tree Tag No.</field>
+<field>Sample Number</field>
+<field>Genus</field>
+<field>Species</field>
+</metadata>
+
+</Metadata>
+
+<Worksheet sheetname='Collection Data Intake'>
+
+<rule type="uniqueValue" name="Tree Tag No./ Accession No" level="warning" />
+
+<rule type='checkInXMLFields' name='Voucher Specimen?' level='warning'>
+<field>Y</field>
+<field>N</field>
+</rule>
+
+<rule type='checkInXMLFields' name='Cultivated?' level='warning'>
+<field>Y</field>
+<field>N</field>
+</rule>
+
+<rule type='checkInXMLFields' name='Sample Number' level='warning'>
+    <field>1</field>
+    <field>2</field>
+    <field>3</field>
+    <field>4</field>
+    <field>5</field>
+    <field>6</field>
+    <field>7</field>
+    <field>8</field>
+    <field>9</field>
+</rule>
+
+
+<!--<rule type='checkInXMLFields' name='Habit' level='warning'> </rule>-->
+<rule type='checkInXMLFields' name='Tissue Type' level='warning'>
+<field>Leaf</field>
+<field>Fruit</field>
+<field>Seed</field>
+<field>Root</field>
+<field>Bark</field>
+<field>Cambium</field>
+<field>Other</field>
+</rule>
+
+<rule type='checkInXMLFields' name='Locality' level='warning'>
+<field>Amacayacu</field>
+<field>Baotianman</field>
+<field>Brunei</field>
+<field>Bukit Timah</field>
+<field>Changbaishan</field>
+<field>Chesapeake (SERC)</field>
+<field>Danum Valley</field>
+<field>Dinghushan</field>
+<field>Donglingshan</field>
+<field>Doi Inthanon</field>
+<field>French Guiana</field>
+<field>Fushan</field>
+<field>Gutianshan</field>
+<field>Haliburton Forest</field>
+<field>Harvard Forest</field>
+<field>Hawaii</field>
+<field>Hong Kong</field>
+<field>Huai Kha Khaeng</field>
+<field>Ilha do Cardoso</field>
+<field>Ituri</field>
+<field>JimDukeFarmacy</field>
+<field>Khao Chong</field>
+<field>Korup</field>
+<field>La Planada</field>
+<field>Lambir</field>
+<field>Lienhuachih</field>
+<field>Lily Dickey Woods</field>
+<field>Luquillo</field>
+<field>Madagascar</field>
+<field>Manaus</field>
+<field>Mo Singto</field>
+<field>Mpala</field>
+<field>Mudumalai</field>
+<field>Nanjenshan</field>
+<field>Nonggang</field>
+<field>Orchid Island</field>
+<field>Palanan</field>
+<field>Pasoh</field>
+<field>Rabi</field>
+<field>SCBI</field>
+<field>Sinharaja</field>
+<field>SERC</field>
+<field>Sinharaja</field>
+<field>Santa Cruz</field>
+<field>Tiantong</field>
+<field>USDA</field>
+<field>Wabikon Lake</field>
+<field>Wanang</field>
+<field>Wind River</field>
+<field>Wytham Woods</field>
+<field>Xishuangbanna</field>
+<field>Yasuni</field>
+<field>Yosemite</field>
+</rule>
+
+<rule type='RequiredColumns' name='RequiredColumns' level='error'>
+<field>Tree Tag No.</field>
+<field>Sample Number</field>
+<field>Genus</field>
+<field>Species</field>
+<field>Author</field>
+<field>Family</field>
+<field>Collector Number</field>
+<field>Collector (Team)</field>
+<field>Collection Date</field>
+<field>Voucher Specimen?</field>
+<field>Plate No.</field>
+<field>Row Letter</field>
+<field>Column No.</field>
+<field>Tissue Type</field>
+</rule>
+
+<rule type="checkTissueColumnsSI" name="checkTissueColumnsSI" level="error" />
+
+<rule type="checkGenusSpeciesCountsSI" name="checkGenusSpeciesCountsSI" level="warning" />
+
+<rule type="checkVoucherSI" name="checkVoucherSI" level="error" />
+
+</Worksheet>
+
+</Validate>
+

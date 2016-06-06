@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="biovalidator" default="all">
+
+
+    <property file="biovalidator.properties"/>
+    <!-- Uncomment the following property if no tests compilation is needed -->
+    <!--
+   <property name="skip.tests" value="true"/>
+    -->
+    <property name="javac2.home" value="${idea.home}/lib"/>
+    <path id="javac2.classpath">
+        <pathelement location="${javac2.home}/javac2.jar"/>
+        <pathelement location="${javac2.home}/jdom.jar"/>
+        <pathelement location="${javac2.home}/asm.jar"/>
+        <pathelement location="${javac2.home}/asm-commons.jar"/>
+    </path>
+    <taskdef name="javac2" classname="com.intellij.ant.Javac2" classpathref="javac2.classpath"/>
+    <taskdef name="instrumentIdeaExtensions" classname="com.intellij.ant.InstrumentIdeaExtensions"
+             classpathref="javac2.classpath"/>
+
+    <!-- Compiler options -->
+
+    <property name="compiler.debug" value="on"/>
+    <property name="compiler.generate.no.warnings" value="off"/>
+    <property name="compiler.args" value=""/>
+    <property name="compiler.max.memory" value="128m"/>
+    <patternset id="ignored.files">
+        <exclude name="**/CVS/**"/>
+        <exclude name="**/SCCS/**"/>
+        <exclude name="**/RCS/**"/>
+        <exclude name="**/rcs/**"/>
+        <exclude name="**/.DS_Store/**"/>
+        <exclude name="**/.svn/**"/>
+        <exclude name="**/.pyc/**"/>
+        <exclude name="**/.pyo/**"/>
+        <exclude name="**/*.pyc/**"/>
+        <exclude name="**/*.pyo/**"/>
+        <exclude name="**/.git/**"/>
+        <exclude name="**/*.hprof/**"/>
+        <exclude name="**/_svn/**"/>
+    </patternset>
+    <patternset id="library.patterns">
+        <include name="*.zip"/>
+        <include name="*.war"/>
+        <include name="*.egg"/>
+        <include name="*.ear"/>
+        <include name="*.swc"/>
+        <include name="*.jar"/>
+    </patternset>
+    <patternset id="compiler.resources">
+        <include name="**/?*.properties"/>
+        <include name="**/?*.xml"/>
+        <include name="**/?*.gif"/>
+        <include name="**/?*.png"/>
+        <include name="**/?*.jpeg"/>
+        <include name="**/?*.jpg"/>
+        <include name="**/?*.html"/>
+        <include name="**/?*.dtd"/>
+        <include name="**/?*.tld"/>
+        <include name="**/?*.ftl"/>
+        <include name="**/?*.jar"/>
+    </patternset>
+
+    <!-- JDK definitions -->
+
+    <property name="jdk.bin.1.6" value="${jdk.home.1.6}/bin"/>
+    <path id="jdk.classpath.1.6">
+        <fileset dir="${jdk.home.1.6}">
+            <include name="../../1.6/Home/lib/deploy.jar"/>
+            <include name="../../1.6/Home/lib/dt.jar"/>
+            <include name="../../1.6/Home/lib/javaws.jar"/>
+            <include name="../../1.6/Home/lib/jce.jar"/>
+            <include name="../../1.6/Home/lib/management-agent.jar"/>
+            <include name="../../1.6/Home/lib/plugin.jar"/>
+            <include name="../../1.6/Home/lib/sa-jdi.jar"/>
+            <include name="../../1.6/Home/../Classes/alt-rt.jar"/>
+            <include name="../../1.6/Home/../Classes/charsets.jar"/>
+            <include name="../../1.6/Home/../Classes/classes.jar"/>
+            <include name="../../1.6/Home/../Classes/dt.jar"/>
+            <include name="../../1.6/Home/../Classes/jce.jar"/>
+            <include name="../../1.6/Home/../Classes/jconsole.jar"/>
+            <include name="../../1.6/Home/../Classes/jsse.jar"/>
+            <include name="../../1.6/Home/../Classes/laf.jar"/>
+            <include name="../../1.6/Home/../Classes/management-agent.jar"/>
+            <include name="../../1.6/Home/../Classes/ui.jar"/>
+            <include name="../../1.6/Home/lib/ext/apple_provider.jar"/>
+            <include name="../../1.6/Home/lib/ext/dnsns.jar"/>
+            <include name="../../1.6/Home/lib/ext/localedata.jar"/>
+            <include name="../../1.6/Home/lib/ext/sunjce_provider.jar"/>
+            <include name="../../1.6/Home/lib/ext/sunpkcs11.jar"/>
+        </fileset>
+    </path>
+
+    <property name="project.jdk.home" value="${jdk.home.1.6}"/>
+    <property name="project.jdk.bin" value="${jdk.bin.1.6}"/>
+    <property name="project.jdk.classpath" value="jdk.classpath.1.6"/>
+
+    <!-- Modules -->
+
+
+    <!-- Module BioValidator -->
+
+    <dirname property="module.biovalidator.basedir" file="${ant.file}"/>
+
+
+    <property name="module.jdk.home.biovalidator" value="${project.jdk.home}"/>
+    <property name="module.jdk.bin.biovalidator" value="${project.jdk.bin}"/>
+    <property name="module.jdk.classpath.biovalidator" value="${project.jdk.classpath}"/>
+
+    <property name="compiler.args.biovalidator" value="${compiler.args}"/>
+
+    <property name="biovalidator.output.dir" value="${module.biovalidator.basedir}/out/production/BioValidator"/>
+    <property name="biovalidator.testoutput.dir" value="${module.biovalidator.basedir}/out/test/BioValidator"/>
+
+    <path id="biovalidator.module.bootclasspath">
+        <!-- Paths to be included in compilation bootclasspath -->
+    </path>
+
+    <path id="biovalidator.module.classpath">
+        <pathelement location="../lib/forms_rt.jar"/>
+        <path refid="${module.jdk.classpath.biovalidator}"/>
+        <pathelement location="../lib/commons-digester.jar"/>
+        <pathelement location="../lib/mysql-connector-java-5.1.10-bin.jar"/>
+        <pathelement location="../lib/commons-beanutils.jar"/>
+        <pathelement location="../lib/commons-logging.jar"/>
+        <pathelement location="../lib/poi-3.7-20101029.jar"/>
+        <pathelement location="../lib/commons-collections.jar"/>
+        <pathelement location="../lib/flickrapi-1.2.jar"/>
+        <pathelement location="../lib/swing-worker-1.2.jar"/>
+        <pathelement location="../lib/lucene-core-3.0.1.jar"/>
+        <pathelement location="../lib/lucene-demos-3.0.1.jar"/>
+        <pathelement location="../lib/lucene-highlighter-3.0.1.jar"/>
+        <pathelement location="../lib/bioTaxonomy-src.jar"/>
+        <fileset dir="../lib/">
+            <include name="*.jar"/>
+        </fileset>
+        <fileset dir="../lib/">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+
+    <path id="biovalidator.runtime.module.classpath">
+        <pathelement location="../lib/forms_rt.jar"/>
+        <pathelement location="${biovalidator.output.dir}"/>
+        <pathelement location="${biovalidator.testoutput.dir}"/>
+        <pathelement location="../lib/commons-digester.jar"/>
+        <pathelement location="../lib/mysql-connector-java-5.1.10-bin.jar"/>
+        <pathelement location="../lib/commons-beanutils.jar"/>
+        <pathelement location="../lib/commons-logging.jar"/>
+        <pathelement location="../lib/poi-3.7-20101029.jar"/>
+        <pathelement location="../lib/commons-collections.jar"/>
+        <pathelement location="../lib/flickrapi-1.2.jar"/>
+        <pathelement location="../lib/swing-worker-1.2.jar"/>
+        <pathelement location="../lib/lucene-core-3.0.1.jar"/>
+        <pathelement location="../lib/lucene-demos-3.0.1.jar"/>
+        <pathelement location="../lib/lucene-highlighter-3.0.1.jar"/>
+        <pathelement location="../lib/bioTaxonomy-src.jar"/>
+        <fileset dir="../lib/">
+            <include name="*.jar"/>
+        </fileset>
+        <fileset dir="../lib/">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+
+
+    <patternset id="excluded.from.module.biovalidator">
+        <patternset refid="ignored.files"/>
+        <exclude name="out/**"/>
+    </patternset>
+
+    <patternset id="excluded.from.compilation.biovalidator">
+        <patternset refid="excluded.from.module.biovalidator"/>
+    </patternset>
+
+    <path id="biovalidator.module.sourcepath">
+        <dirset dir="${sourcepath}">
+            <include name="bioValidator"/>
+        </dirset>
+    </path>
+
+    <import file="one-jar-ant-task.xml"/>
+
+    <target name="compile.module.biovalidator"
+            depends="compile.module.biovalidator.production,compile.module.biovalidator.tests"
+            description="Compile module BioValidator">
+    </target>
+
+    <target name="compile.module.biovalidator.production" description="Compile module BioValidator; production classes">
+        <mkdir dir="${biovalidator.output.dir}"/>
+        <javac2 srcdir="${srcdir}" destdir="${biovalidator.output.dir}" debug="${compiler.debug}"
+                nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true"
+                executable="${module.jdk.bin.biovalidator}/javac" encoding="utf-8">
+            <compilerarg line="${compiler.args.biovalidator}"/>
+            <bootclasspath refid="biovalidator.module.bootclasspath"/>
+            <classpath refid="biovalidator.module.classpath"/>
+            <src refid="biovalidator.module.sourcepath"/>
+            <patternset refid="excluded.from.compilation.biovalidator"/>
+        </javac2>
+
+        <copy file="README.TXT" tofile="../bioValidator.deploy/README.TXT"/>
+        <copy file="README-Developer.TXT" tofile="../bioValidator.deploy/README-Developer.TXT"/>
+
+        <copy todir="${biovalidator.output.dir}">
+            <fileset dir="${module.biovalidator.basedir}">
+                <patternset refid="compiler.resources"/>
+                <type type="file"/>
+            </fileset>
+        </copy>
+
+        <!-- Construct a jar of just source code
+       <jar jarfile="${biovalidator.output.dir}/bioValidator.jar" basedir="./lib">
+           <manifest>
+                   <attribute name="Main-Class" value="edu.berkeley.biocode.bioValidator.mainPage"/>
+                   <attribute name="Program-Version" value="${Program-Version}"/>
+           </manifest>
+        </jar>-->
+
+        <!-- Construct the One-JAR file -->
+        <one-jar destfile="../bioValidator.deploy/bioValidator.jar">
+            <manifest>
+                <attribute name="Main-Class" value="edu.berkeley.edu.bioValidator"/>
+                <attribute name="One-Jar-Main-Class" value="edu.berkeley.biocode.bioValidator.mainPage"/>
+                <attribute name="One-Jar-Expand" value="biovalidatorapplication.properties"/>
+            </manifest>
+            <main>
+                <!-- Construct main.jar from classes and source code -->
+                <fileset dir="${biovalidator.output.dir}"/>
+            </main>
+            <lib>
+                <fileset file="../lib/forms_rt.jar"/>
+                <fileset file="../lib/poi-3.7-20101029.jar"/>
+                <fileset file="../lib/commons-digester.jar"/>
+                <fileset file="../lib/mysql-connector-java-5.1.10-bin.jar"/>
+                <fileset file="../lib/commons-beanutils.jar"/>
+                <fileset file="../lib/commons-logging.jar"/>
+                <fileset file="../lib/commons-collections.jar"/>
+                <fileset file="../lib/flickrapi-1.2.jar"/>
+                <fileset file="../lib/swing-worker-1.2.jar"/>
+                <fileset file="../lib/lucene-core-3.0.1.jar"/>
+                <fileset file="../lib/lucene-demos-3.0.1.jar"/>
+                <fileset file="../lib/lucene-highlighter-3.0.1.jar"/>
+                <fileset file="../lib/bioTaxonomy-src.jar"/>
+                <fileset dir="../lib/">
+                    <include name="*.jar"/>
+                </fileset>
+                <fileset dir="../lib/">
+                    <include name="*.jar"/>
+                </fileset>
+            </lib>
+        </one-jar>
+        <one-jar destfile="../bioValidator.deploy/bioValidatorSearchMachineTags.jar">
+            <manifest>
+                <attribute name="Main-Class" value="edu.berkeley.biocode.flickr.searchMachineTagsFlickr"/>
+                <attribute name="One-Jar-Main-Class" value="edu.berkeley.biocode.flickr.searchMachineTagsFlickr"/>
+                <attribute name="One-Jar-Expand" value="biovalidatorapplication.properties"/>
+            </manifest>
+            <main>
+                <!-- Construct main.jar from classes and source code -->
+                <fileset dir="${biovalidator.output.dir}"/>
+            </main>
+            <lib>
+                <fileset file="../lib/flickrapi-1.2.jar"/>
+            </lib>
+        </one-jar>
+
+    </target>
+
+    <target name="compile.module.biovalidator.tests" depends="compile.module.biovalidator.production"
+            description="compile module BioValidator; test classes" unless="skip.tests"/>
+
+    <target name="clean.module.biovalidator" description="cleanup module">
+        <delete dir="${biovalidator.output.dir}"/>
+        <delete dir="${biovalidator.testoutput.dir}"/>
+    </target>
+
+    <target name="init" description="Build initialization">
+        <!-- Perform any build initialization in this target -->
+    </target>
+
+    <target name="clean" depends="clean.module.biovalidator" description="cleanup all"/>
+
+    <target name="all" depends="init, clean, compile.module.biovalidator" description="build all"/>
+</project>

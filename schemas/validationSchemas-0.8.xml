@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<validationSchemas xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='validationSchemas.xsd'>
+    <validationSchema name='biocodeValidator-0.8.xml'
+            url='http://biocode.berkeley.edu/biocodeValidator-0.8.xml'
+			XSDName='bioValidator-0.8.xsd'
+			XSDUrl='http://biovalidator.googlecode.com/svn/trunk/schemas/bioValidator-0.8.xsd'
+            contact_name='John Deck'
+            contact_email='jdeck@berkeley.edu'
+            contact_phone='1-541-914-4739'
+        	description='This is the validation schema location for the Moorea Biocode Project'>
+    </validationSchema>
+    <validationSchema name='mosquitoValidator.xml'
+            url='http://biovalidator.googlecode.com/svn/trunk/schemas/mosquitoValidator-0.8.xml'
+			XSDName='bioValidator-0.8.xsd'
+			XSDUrl='http://biovalidator.googlecode.com/svn/trunk/schemas/bioValidator-0.8.xsd'
+            contact_name='Desmond Foley'
+            contact_email='FoleyDes@si.edu'
+            contact_phone='???'
+        	description=''>
+    </validationSchema>
+    <validationSchema name='Kress Validator'
+            url='http://biovalidator.googlecode.com/svn/trunk/schemas/si_barcodeValidator-0.8.xml'
+			XSDName='bioValidator-0.8.xsd'
+			XSDUrl='http://biovalidator.googlecode.com/svn/trunk/schemas/bioValidator-0.8.xsd'
+            contact_name='Jamie Whitacre'
+            contact_email='WHITACREJ@si.edu'
+            contact_phone='1-xxx-xxx-xxxx'
+        	description='Kress Validator'>
+    </validationSchema>
+    <validationSchema name='BOLD Spreadsheet Validator'
+            url='http://biovalidator.googlecode.com/svn/trunk/schemas/BOLDValidator-0.8.xml'
+			XSDName='bioValidator-0.8.xsd'
+			XSDUrl='http://biovalidator.googlecode.com/svn/trunk/schemas/bioValidator-0.8.xsd'
+            contact_name='John Deck'
+            contact_email='jdeck@berkeley.edu'
+            contact_phone='1-541-914-4793'
+        	description='BOLD Spreadsheet Validator'>
+    </validationSchema>
+    <validationSchema name='Ocean Sampling Day Validator'
+            url='http://biovalidator.googlecode.com/svn/trunk/OSD-0.8.xml'
+			XSDName='bioValidator-0.8.xsd'
+			XSDUrl='http://biovalidator.googlecode.com/svn/trunk/bioValidator-0.8.xsd'
+            contact_name='John Deck'
+            contact_email='jdeck@berkeley.edu'
+            contact_phone='1-541-914-4793'
+        	description='Ocean Sampling Day Validator'>
+    </validationSchema>
+</validationSchemas>

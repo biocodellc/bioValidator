@@ -1,0 +1,311 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Validate xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='bioValidator-0.8.xsd'>
+
+<Metadata>
+
+<metadata name='displayFieldsSpreadsheet'>
+<field>Genus</field>
+<field>Species</field>
+<field>CatalogNumber</field>
+<field>CollectionCode</field>
+</metadata>
+
+<metadata name='list1' alias='country'>
+<field>Afghanistan</field>
+<field>Aland Islands</field>
+<field>Albania</field>
+<field>Algeria</field>
+<field>American Samoa</field>
+<field>Andorra</field>
+<field>Angola</field>
+<field>Anguilla</field>
+<field>Antarctica</field>
+<field>Antigua and Barbuda</field>
+<field>Argentina</field>
+<field>Armenia</field>
+<field>Aruba</field>
+<field>Australia</field>
+<field>Austria</field>
+<field>Azerbaijan</field>
+<field>Bahamas</field>
+<field>Bahrain</field>
+<field>Bangladesh</field>
+<field>Barbados</field>
+<field>Belarus</field>
+<field>Belgium</field>
+<field>Belize</field>
+<field>Benin</field>
+<field>Bermuda</field>
+<field>Bhutan</field>
+<field>Bolivia</field>
+<field>Bosnia and Herzegovina</field>
+<field>Botswana</field>
+<field>Bouvet Island</field>
+<field>Brazil</field>
+<field>British Indian Ocean Territory</field>
+<field>Brunei Darussalam</field>
+<field>Bulgaria</field>
+<field>Burkina Faso</field>
+<field>Burundi</field>
+<field>Cambodia</field>
+<field>Cameroon</field>
+<field>Canada</field>
+<field>Cape Verde</field>
+<field>Cayman Islands</field>
+<field>Central African Republic</field>
+<field>Chad</field>
+<field>Chile</field>
+<field>China</field>
+<field>Christmas Island</field>
+<field>Cocos (Keeling) Islands</field>
+<field>Colombia</field>
+<field>Comoros</field>
+<field>Congo</field>
+<field>Congo, The Democratic Republic of The</field>
+<field>Cook Islands</field>
+<field>Costa Rica</field>
+<field>Cote D'ivoire</field>
+<field>Croatia</field>
+<field>Cuba</field>
+<field>Cyprus</field>
+<field>Czech Republic</field>
+<field>Denmark</field>
+<field>Djibouti</field>
+<field>Dominica</field>
+<field>Dominican Republic</field>
+<field>Ecuador</field>
+<field>Egypt</field>
+<field>El Salvador</field>
+<field>Equatorial Guinea</field>
+<field>Eritrea</field>
+<field>Estonia</field>
+<field>Ethiopia</field>
+<field>Falkland Islands (Malvinas)</field>
+<field>Faroe Islands</field>
+<field>Fiji</field>
+<field>Finland</field>
+<field>France</field>
+<field>French Guiana</field>
+<field>French Polynesia</field>
+<field>French Southern Territories</field>
+<field>Gabon</field>
+<field>Gambia</field>
+<field>Georgia</field>
+<field>Germany</field>
+<field>Ghana</field>
+<field>Gibraltar</field>
+<field>Greece</field>
+<field>Greenland</field>
+<field>Grenada</field>
+<field>Guadeloupe</field>
+<field>Guam</field>
+<field>Guatemala</field>
+<field>Guernsey</field>
+<field>Guinea</field>
+<field>Guinea-Bissau</field>
+<field>Guyana</field>
+<field>Haiti</field>
+<field>Heard Island and Mcdonald Islands</field>
+<field>Holy See (Vatican City State)</field>
+<field>Honduras</field>
+<field>Hong Kong</field>
+<field>Hungary</field>
+<field>Iceland</field>
+<field>India</field>
+<field>Indonesia</field>
+<field>Iran, Islamic Republic of</field>
+<field>Iraq</field>
+<field>Ireland</field>
+<field>Isle of Man</field>
+<field>Israel</field>
+<field>Italy</field>
+<field>Jamaica</field>
+<field>Japan</field>
+<field>Jersey</field>
+<field>Jordan</field>
+<field>Kazakhstan</field>
+<field>Kenya</field>
+<field>Kiribati</field>
+<field>Korea, Democratic People's Republic of</field>
+<field>Korea, Republic of</field>
+<field>Kuwait</field>
+<field>Kyrgyzstan</field>
+<field>Lao People's Democratic Republic</field>
+<field>Latvia</field>
+<field>Lebanon</field>
+<field>Lesotho</field>
+<field>Liberia</field>
+<field>Libyan Arab Jamahiriya</field>
+<field>Liechtenstein</field>
+<field>Lithuania</field>
+<field>Luxembourg</field>
+<field>Macao</field>
+<field>Macedonia, The Former Yugoslav Republic of</field>
+<field>Madagascar</field>
+<field>Malawi</field>
+<field>Malaysia</field>
+<field>Maldives</field>
+<field>Mali</field>
+<field>Malta</field>
+<field>Marshall Islands</field>
+<field>Martinique</field>
+<field>Mauritania</field>
+<field>Mauritius</field>
+<field>Mayotte</field>
+<field>Mexico</field>
+<field>Micronesia, Federated States of</field>
+<field>Moldova, Republic of</field>
+<field>Monaco</field>
+<field>Mongolia</field>
+<field>Montenegro</field>
+<field>Montserrat</field>
+<field>Morocco</field>
+<field>Mozambique</field>
+<field>Myanmar</field>
+<field>Namibia</field>
+<field>Nauru</field>
+<field>Nepal</field>
+<field>Netherlands</field>
+<field>Netherlands Antilles</field>
+<field>New Caledonia</field>
+<field>New Zealand</field>
+<field>Nicaragua</field>
+<field>Niger</field>
+<field>Nigeria</field>
+<field>Niue</field>
+<field>Norfolk Island</field>
+<field>Northern Mariana Islands</field>
+<field>Norway</field>
+<field>Oman</field>
+<field>Pakistan</field>
+<field>Palau</field>
+<field>Palestinian Territory, Occupied</field>
+<field>Panama</field>
+<field>Papua New Guinea</field>
+<field>Paraguay</field>
+<field>Peru</field>
+<field>Philippines</field>
+<field>Pitcairn</field>
+<field>Poland</field>
+<field>Portugal</field>
+<field>Puerto Rico</field>
+<field>Qatar</field>
+<field>Reunion</field>
+<field>Romania</field>
+<field>Russian Federation</field>
+<field>Rwanda</field>
+<field>Saint Barthelemy</field>
+<field>Saint Helena</field>
+<field>Saint Kitts and Nevis</field>
+<field>Saint Lucia</field>
+<field>Saint Martin</field>
+<field>Saint Pierre and Miquelon</field>
+<field>Saint Vincent and The Grenadines</field>
+<field>Samoa</field>
+<field>San Marino</field>
+<field>Sao Tome and Principe</field>
+<field>Saudi Arabia</field>
+<field>Senegal</field>
+<field>Serbia</field>
+<field>Seychelles</field>
+<field>Sierra Leone</field>
+<field>Singapore</field>
+<field>Slovakia</field>
+<field>Slovenia</field>
+<field>Solomon Islands</field>
+<field>Somalia</field>
+<field>South Africa</field>
+<field>South Georgia and The South Sandwich Islands</field>
+<field>Spain</field>
+<field>Sri Lanka</field>
+<field>Sudan</field>
+<field>Suriname</field>
+<field>Svalbard and Jan Mayen</field>
+<field>Swaziland</field>
+<field>Sweden</field>
+<field>Switzerland</field>
+<field>Syrian Arab Republic</field>
+<field>Taiwan, Province of China</field>
+<field>Tajikistan</field>
+<field>Tanzania, United Republic of</field>
+<field>Thailand</field>
+<field>Timor-Leste</field>
+<field>Togo</field>
+<field>Tokelau</field>
+<field>Tonga</field>
+<field>Trinidad and Tobago</field>
+<field>Tunisia</field>
+<field>Turkey</field>
+<field>Turkmenistan</field>
+<field>Turks and Caicos Islands</field>
+<field>Tuvalu</field>
+<field>Uganda</field>
+<field>Ukraine</field>
+<field>United Arab Emirates</field>
+<field>United Kingdom</field>
+<field>United States</field>
+<field>United States Minor Outlying Islands</field>
+<field>Uruguay</field>
+<field>Uzbekistan</field>
+<field>Vanuatu</field>
+<field>Venezuela</field>
+<field>Viet Nam</field>
+<field>Virgin Islands, British</field>
+<field>Virgin Islands, U.S.</field>
+<field>Wallis and Futuna</field>
+<field>Western Sahara</field>
+<field>Yemen</field>
+<field>Zambia</field>
+<field>Zimbabwe</field>
+</metadata>
+
+</Metadata>
+<Worksheet sheetname="Specimens">
+
+<rule type='checkInXMLFields' name='Country' level='warning' list='list1'></rule>
+
+<rule type='RequiredColumns' name='RequiredColumns' level='error'>
+<field>SubmitterPerson</field>
+<field>SubmitterEmail</field>
+<field>SubmitterAddress</field>
+<field>DateLastModified</field>
+<field>Collector</field>
+<field>InstitutionCode</field>
+<field>CollectionCode</field>
+<field>CatalogNumber</field>
+<field>BasisOfRecord</field>
+<field>Genus</field>
+<field>Species</field>
+<field>IdentificationMethod</field>
+<field>EarliestDateCollected</field>
+<field>LatestDateCollected</field>
+<field>Country</field>
+<field>StateProvince</field>
+<field>Locality</field>
+<field>GeodeticDatum</field>
+<field>VerbatimLongitude</field>
+<field>VerbatimLatitude</field>
+<field>IndividualCount</field>
+<field>Sex</field>
+<field>LifeStage</field>
+<field>CollectionMethod</field>
+</rule>
+
+<rule type='DwCLatLngChecker'
+        decimalLatitude='DecimalLatitude'
+        decimalLongitude='DecimalLongitude'
+        maxErrorInMeters='MaxErrorInMeters'
+        horizontalDatum='HorizontalDatum' level='warning'></rule>
+
+<rule type='checkInXMLFields' name='GeodeticDatum' level='warning'>
+<field>WGS1984</field>
+<field>NAD1927</field>
+<field>NAD1983</field>
+<field>unknown</field>
+</rule>
+
+</Worksheet>
+
+</Validate>
+

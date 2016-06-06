@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="edu.berkeley.biocode.bioValidator.mainPage">
+  <tabbedpane id="8cf9a" binding="tabbedPane">
+    <constraints>
+      <xy x="274" y="68" width="3709" height="3503"/>
+    </constraints>
+    <properties>
+      <minimumSize width="800" height="600"/>
+      <preferredSize width="800" height="600"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="9198b" binding="mainPanel" layout-manager="GridLayoutManager" row-count="4" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="5" left="5" bottom="5" right="5"/>
+        <constraints>
+          <tabbedpane title="Untitled"/>
+        </constraints>
+        <properties>
+          <focusCycleRoot value="true"/>
+          <minimumSize width="1000" height="700"/>
+          <preferredSize width="1000" height="700"/>
+        </properties>
+        <border type="bevel-lowered"/>
+        <children>
+          <grid id="3c300" binding="topPanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                <maximum-size width="-1" height="25"/>
+              </grid>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="97986" class="javax.swing.JLabel" binding="labelTitle">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <horizontalTextPosition value="0"/>
+                  <text value="TITLE GOES HERE"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="9e274" binding="bottomPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="4" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="800" height="600"/>
+                <preferred-size width="800" height="600"/>
+              </grid>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <tabbedpane id="70033" binding="tabbedPane1" default-binding="true">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="900" height="600"/>
+                  </grid>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <grid id="a2d8a" binding="buttonData" layout-manager="GridLayoutManager" row-count="18" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <tabbedpane title="Validate"/>
+                    </constraints>
+                    <properties>
+                      <minimumSize width="1000" height="736"/>
+                      <preferredSize width="1000" height="736"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="ceef5" class="javax.swing.JLabel" binding="labelXML">
+                        <constraints>
+                          <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                            <maximum-size width="-1" height="50"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <font style="2"/>
+                          <text value="..."/>
+                        </properties>
+                      </component>
+                      <grid id="34e37" layout-manager="BorderLayout" hgap="0" vgap="0">
+                        <constraints>
+                          <grid row="3" column="2" row-span="15" col-span="1" vsize-policy="3" hsize-policy="7" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                            <minimum-size width="600" height="400"/>
+                            <preferred-size width="600" height="500"/>
+                          </grid>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <scrollpane id="df8b0" class="edu.berkeley.biocode.utils.scrollableEditorPane" binding="textPane1">
+                            <constraints border-constraint="West"/>
+                            <properties>
+                              <preferredSize width="590" height="410"/>
+                            </properties>
+                            <border type="none"/>
+                            <children/>
+                          </scrollpane>
+                        </children>
+                      </grid>
+                      <component id="59a7d" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font style="1"/>
+                          <text value="Results"/>
+                        </properties>
+                      </component>
+                      <component id="bad9b" class="javax.swing.JButton" binding="buttonRun">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Run"/>
+                        </properties>
+                      </component>
+                      <component id="60163" class="edu.berkeley.biocode.validator.validationFileFetcher" binding="refreshValidationCacheButton" default-binding="true">
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                      </component>
+                      <grid id="f8711" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="17" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="24" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children/>
+                      </grid>
+                      <component id="9291c" class="javax.swing.JButton" binding="buttonUpload">
+                        <constraints>
+                          <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <enabled value="false"/>
+                          <text value="Upload to Database"/>
+                        </properties>
+                      </component>
+                      <component id="e6edc" class="javax.swing.JButton" binding="buttonUploadFT">
+                        <constraints>
+                          <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <enabled value="false"/>
+                          <text value="Upload to Fusion Table"/>
+                        </properties>
+                      </component>
+                      <component id="9b6fd" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="17" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                            <preferred-size width="18" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <text value=""/>
+                        </properties>
+                      </component>
+                      <grid id="7dccc" binding="resultsPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="3" column="0" row-span="3" col-span="2" vsize-policy="1" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <background color="-1"/>
+                        </properties>
+                        <border type="none">
+                          <title-color color="-16777216"/>
+                        </border>
+                        <children/>
+                      </grid>
+                      <component id="6d7c5" class="javax.swing.JButton" binding="buttonValidation">
+                        <constraints>
+                          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                            <maximum-size width="200" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <text value="View Messages"/>
+                        </properties>
+                      </component>
+                      <component id="9044d" class="javax.swing.JButton" binding="buttonViewData">
+                        <constraints>
+                          <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                            <maximum-size width="150" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <text value="View Data"/>
+                        </properties>
+                      </component>
+                      <component id="e35da" class="javax.swing.JRadioButton" binding="radioButtonRow">
+                        <constraints>
+                          <grid row="7" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="2" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <selected value="true"/>
+                          <text value="Display (and sort by) all rows"/>
+                        </properties>
+                      </component>
+                      <component id="82f1d" class="javax.swing.JRadioButton" binding="radioButtonMessage">
+                        <constraints>
+                          <grid row="8" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="2" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Display unique messages only"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="7ea9" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <tabbedpane title="PhotoMatcher"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="d8d5" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value=" The PhotoMatcher enables you to rename photos by associating them with records from your validated spreadsheeet."/>
+                        </properties>
+                      </component>
+                      <grid id="95a8e" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <splitpane id="faaea">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="200" height="200"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                            <border type="none"/>
+                            <children>
+                              <grid id="66983" layout-manager="GridLayoutManager" row-count="5" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                                <margin top="0" left="0" bottom="0" right="0"/>
+                                <constraints>
+                                  <splitpane position="left"/>
+                                </constraints>
+                                <properties/>
+                                <border type="none"/>
+                                <children>
+                                  <grid id="8906d" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                                    <margin top="0" left="0" bottom="0" right="0"/>
+                                    <constraints>
+                                      <grid row="4" column="0" row-span="1" col-span="5" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                                    </constraints>
+                                    <properties/>
+                                    <border type="none"/>
+                                    <children>
+                                      <component id="f3bdd" class="edu.berkeley.biocode.photoMatcher.panelImageDisplay" binding="pImageDisplay">
+                                        <constraints>
+                                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                                            <minimum-size width="480" height="480"/>
+                                            <preferred-size width="480" height="480"/>
+                                            <maximum-size width="480" height="480"/>
+                                          </grid>
+                                        </constraints>
+                                        <properties/>
+                                      </component>
+                                    </children>
+                                  </grid>
+                                  <component id="393ee" class="javax.swing.JLabel">
+                                    <constraints>
+                                      <grid row="1" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                                    </constraints>
+                                    <properties>
+                                      <font style="1"/>
+                                      <text value="Ctrl-click on image to add it to the Specimen Image Browser"/>
+                                    </properties>
+                                  </component>
+                                  <component id="875d7" class="javax.swing.JButton" binding="buttonPrev">
+                                    <constraints>
+                                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                                        <preferred-size width="80" height="-1"/>
+                                        <maximum-size width="80" height="-1"/>
+                                      </grid>
+                                    </constraints>
+                                    <properties>
+                                      <text value="Prev"/>
+                                    </properties>
+                                  </component>
+                                  <component id="de263" class="edu.berkeley.biocode.photoMatcher.panelImageBrowser" binding="pImageBrowser">
+                                    <constraints>
+                                      <grid row="3" column="0" row-span="1" col-span="5" vsize-policy="3" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                                        <minimum-size width="500" height="85"/>
+                                      </grid>
+                                    </constraints>
+                                    <properties/>
+                                  </component>
+                                  <grid id="76059" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                                    <margin top="0" left="0" bottom="0" right="0"/>
+                                    <constraints>
+                                      <grid row="0" column="0" row-span="1" col-span="5" vsize-policy="1" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                                    </constraints>
+                                    <properties/>
+                                    <border type="none"/>
+                                    <children>
+                                      <component id="c405e" class="javax.swing.JLabel" binding="labelImageDirectory">
+                                        <constraints>
+                                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                                            <preferred-size width="350" height="-1"/>
+                                          </grid>
+                                        </constraints>
+                                        <properties>
+                                          <font style="2"/>
+                                          <text value=" ..."/>
+                                        </properties>
+                                      </component>
+                                      <component id="cb819" class="javax.swing.JButton" binding="buttonImageDirectory">
+                                        <constraints>
+                                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                                            <preferred-size width="170" height="-1"/>
+                                            <maximum-size width="170" height="-1"/>
+                                          </grid>
+                                        </constraints>
+                                        <properties>
+                                          <text value="Input Directory"/>
+                                        </properties>
+                                      </component>
+                                      <component id="51781" class="javax.swing.JCheckBox" binding="refreshThumbnailCacheCheckBox" default-binding="true">
+                                        <constraints>
+                                          <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="1" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                                        </constraints>
+                                        <properties>
+                                          <text value="Force creation of new thumbnails on image load"/>
+                                        </properties>
+                                      </component>
+                                    </children>
+                                  </grid>
+                                  <component id="8e10e" class="javax.swing.JButton" binding="buttonNext">
+                                    <constraints>
+                                      <grid row="2" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                                        <maximum-size width="80" height="-1"/>
+                                      </grid>
+                                    </constraints>
+                                    <properties>
+                                      <text value="Next"/>
+                                    </properties>
+                                  </component>
+                                  <component id="e31e6" class="javax.swing.JLabel" binding="labelImagesDisplayed">
+                                    <constraints>
+                                      <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                                    </constraints>
+                                    <properties>
+                                      <text value="..."/>
+                                    </properties>
+                                  </component>
+                                </children>
+                              </grid>
+                              <grid id="32121" binding="specimenMatchPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                                <margin top="0" left="0" bottom="0" right="0"/>
+                                <constraints>
+                                  <splitpane position="right"/>
+                                </constraints>
+                                <properties>
+                                  <background color="-1118482"/>
+                                </properties>
+                                <border type="none"/>
+                                <children>
+                                  <grid id="1a7ab" binding="panelSpecimenImageDrop" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                                    <margin top="0" left="0" bottom="0" right="0"/>
+                                    <constraints>
+                                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+                                    </constraints>
+                                    <properties>
+                                      <background color="-1118482"/>
+                                    </properties>
+                                    <border type="none"/>
+                                    <children>
+                                      <grid id="84c6a" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                                        <margin top="0" left="0" bottom="0" right="0"/>
+                                        <constraints>
+                                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+                                        </constraints>
+                                        <properties>
+                                          <background color="-1118482"/>
+                                        </properties>
+                                        <border type="none"/>
+                                        <children>
+                                          <nested-form id="3e231" form-file="edu/berkeley/biocode/photoMatcher/specimenDisplayController.form" binding="matcherSpecimenDisplayController">
+                                            <constraints>
+                                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                                            </constraints>
+                                          </nested-form>
+                                        </children>
+                                      </grid>
+                                      <component id="e9c40" class="edu.berkeley.biocode.photoMatcher.panelImageBrowser" binding="pSpecimenImageBrowser">
+                                        <constraints>
+                                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                                            <minimum-size width="-1" height="165"/>
+                                            <preferred-size width="-1" height="165"/>
+                                            <maximum-size width="-1" height="165"/>
+                                          </grid>
+                                        </constraints>
+                                        <properties>
+                                          <background color="-1118482"/>
+                                        </properties>
+                                      </component>
+                                    </children>
+                                  </grid>
+                                </children>
+                              </grid>
+                            </children>
+                          </splitpane>
+                        </children>
+                      </grid>
+                    </children>
+                  </grid>
+                  <grid id="22177" binding="labelPM" layout-manager="GridLayoutManager" row-count="4" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <tabbedpane title="PhotoLoader"/>
+                    </constraints>
+                    <properties>
+                      <enabled value="true"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <grid id="57be3" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                            <minimum-size width="400" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <grid id="22967" binding="panelImageViewContainer" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                            <margin top="0" left="0" bottom="0" right="0"/>
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties/>
+                            <border type="none"/>
+                            <children>
+                              <component id="6558b" class="edu.berkeley.biocode.photoMatcher.panelImageDisplay" binding="panelImageView">
+                                <constraints>
+                                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false">
+                                    <minimum-size width="500" height="500"/>
+                                    <preferred-size width="500" height="500"/>
+                                    <maximum-size width="500" height="500"/>
+                                  </grid>
+                                </constraints>
+                                <properties/>
+                              </component>
+                            </children>
+                          </grid>
+                          <grid id="d8183" binding="panelSpecimenViewContainer" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                            <margin top="0" left="0" bottom="0" right="0"/>
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties/>
+                            <border type="none"/>
+                            <children>
+                              <component id="28b3b" class="edu.berkeley.biocode.photoMatcher.tinySpreadsheetViewer" binding="panelSpecimenView">
+                                <constraints>
+                                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                                </constraints>
+                                <properties/>
+                              </component>
+                            </children>
+                          </grid>
+                        </children>
+                      </grid>
+                      <grid id="664db" layout-manager="GridLayoutManager" row-count="6" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <hspacer id="8b38e">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                          </hspacer>
+                          <hspacer id="cea3a">
+                            <constraints>
+                              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                          </hspacer>
+                          <component id="687eb" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font style="1"/>
+                              <text value="The features below are designed to load images into Flickr but do not yet integrate with the Biocode Database"/>
+                            </properties>
+                          </component>
+                          <component id="9c32c" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font style="1"/>
+                              <text value="The PhotoManager will load data into Biocode Database and post images to CalPhotos"/>
+                            </properties>
+                          </component>
+                          <component id="5c568" class="javax.swing.JButton" binding="launchPhotoManagerButton" default-binding="true">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                                <preferred-size width="60" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties>
+                              <label value="Biocode PhotoManager"/>
+                              <text value="Biocode PhotoManager"/>
+                            </properties>
+                          </component>
+                          <component id="23350" class="javax.swing.JButton" binding="loadPhotosButton" default-binding="true">
+                            <constraints>
+                              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                                <minimum-size width="170" height="-1"/>
+                                <preferred-size width="170" height="-1"/>
+                                <maximum-size width="170" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties>
+                              <text value="Select Photo Directory"/>
+                            </properties>
+                          </component>
+                          <component id="2cc71" class="javax.swing.JLabel" binding="labelLoadPhotos">
+                            <constraints>
+                              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font style="2"/>
+                              <text value=" ..."/>
+                            </properties>
+                          </component>
+                          <component id="e2836" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Select one or more matched photos before uploading:"/>
+                            </properties>
+                          </component>
+                          <component id="6820b" class="javax.swing.JButton" binding="buttonUploadToFlickr">
+                            <constraints>
+                              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                                <minimum-size width="150" height="-1"/>
+                                <preferred-size width="150" height="-1"/>
+                                <maximum-size width="170" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties>
+                              <enabled value="true"/>
+                              <text value="Upload To Flickr"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <component id="8e58a" class="edu.berkeley.biocode.photoMatcher.photoListPanel" binding="panelphotolist">
+                        <constraints>
+                          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                            <preferred-size width="450" height="500"/>
+                            <maximum-size width="450" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties/>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="28ed" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <tabbedpane title="Help"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="c0a77" class="edu.berkeley.biocode.utils.scrollableEditorPaneDesktop">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                      </component>
+                    </children>
+                  </grid>
+                </children>
+              </tabbedpane>
+            </children>
+          </grid>
+          <component id="d27a0" class="javax.swing.JLabel" binding="labelSpreadsheet">
+            <constraints>
+              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="800" height="-1"/>
+                <preferred-size width="800" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font style="2"/>
+              <text value="..."/>
+            </properties>
+          </component>
+          <component id="b9d68" class="javax.swing.JButton" binding="buttonSpreadsheet">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="160" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value="Load Spreadsheet"/>
+            </properties>
+          </component>
+          <grid id="743bb" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="a6b01" class="javax.swing.JComboBox" binding="FieldHeadingsOnRow">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="60" height="-1"/>
+                    <maximum-size width="60" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <model>
+                    <item value="1"/>
+                    <item value="2"/>
+                    <item value="3"/>
+                    <item value="4"/>
+                    <item value="5"/>
+                    <item value="6"/>
+                    <item value="7"/>
+                    <item value="8"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="2e89d" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Row that column headings are on"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </tabbedpane>
+</form>
