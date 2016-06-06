@@ -1,0 +1,1487 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Validate xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='bioValidator-0.9.xsd'>
+
+<Metadata>
+
+<metadata name='displayFieldsSpreadsheet'>
+<field>Specimen_Num_Collector</field>
+<field>SpecificEpithet</field>
+<field>LowestTaxonLevel</field>
+<field>LowestTaxon</field>
+</metadata>
+
+<metadata name='displayFieldsDB'>
+<field>specimen_num_collector</field>
+<field>scientificname</field>
+<field>lowesttaxonlevel</field>
+<field>lowesttaxon</field>
+</metadata>
+
+<metadata name='list1' alias='projectCode'>
+<field>CMPI</field>
+<field>INDO</field>
+<field>IRLA</field>
+<field>MBIO</field>
+<field>SLAB</field>
+</metadata>
+
+<metadata name='loginNames'>
+<field>(MMA)</field>
+<field>A. Cline</field>
+<field>A. Deans</field>
+<field>A. Deck</field>
+<field>A. Farid</field>
+<field>A. Ghafoor</field>
+<field>A. Gillogly</field>
+<field>A. J. Westgate</field>
+<field>A. Kirk</field>
+<field>A. L. Gardner</field>
+<field>A. L. Maltby</field>
+<field>A. M. Rajabi</field>
+<field>A. Poshkus</field>
+<field>A. Short</field>
+<field>A. Zaher</field>
+<field>Aaron Cohen</field>
+<field>Abigail Poray</field>
+<field>Abrams</field>
+<field>Abril Iñiguez</field>
+<field>Adelaide Rhodes</field>
+<field>Adrien Derval</field>
+<field>Aimee Ellison</field>
+<field>Aji Wahyu Anggoro</field>
+<field>Akela Kuwahara</field>
+<field>Alex Title</field>
+<field>Alexander Boice</field>
+<field>Alexandra Title</field>
+<field>Alexandre Kaulfuss</field>
+<field>Alice Alldredge</field>
+<field>Allen Collins</field>
+<field>Allison Fritts-Penniman</field>
+<field>Amanda Windsor</field>
+<field>Amaru Heitini</field>
+<field>AMIEL</field>
+<field>Amy Driskell</field>
+<field>Analis Finansi Twindiko</field>
+<field>Anania Tangihia</field>
+<field>Anders Waren</field>
+<field>Andika Ari Wibowo</field>
+<field>Andrea Chan</field>
+<field>Andrea Crowther</field>
+<field>Andréann Grimardias</field>
+<field>Andrew Brennan</field>
+<field>Andri Kuncoro</field>
+<field>Andrianus Sembiring</field>
+<field>Angka Mahardini</field>
+<field>Anne Duplouy</field>
+<field>Annie Maguire</field>
+<field>Annie Yau</field>
+<field>Annie/Maguire/Irene Chen</field>
+<field>Antoine N'Yeurt</field>
+<field>Antoine Nancy</field>
+<field>Antony Tepau Tiihiva</field>
+<field>April Yang</field>
+<field>Aquarium of Niagara Falls</field>
+<field>Arapari Tamatea</field>
+<field>Ariihau Durietz</field>
+<field>Ariimoeana Maopi</field>
+<field>Armand Allegri</field>
+<field>Arthur Anker</field>
+<field>Astria Yusmalinda</field>
+<field>Aurelia Juncqua</field>
+<field>B. A. Peers</field>
+<field>B. Ahgook</field>
+<field>B. Blinn</field>
+<field>B. Brown</field>
+<field>B. Collette</field>
+<field>B. Fisher</field>
+<field>B. H. Thran</field>
+<field>B. Habib</field>
+<field>B. Howarth</field>
+<field>B. J. Stafford</field>
+<field>B. K. Schmidt</field>
+<field>B. Lentell</field>
+<field>B. Lessard</field>
+<field>B. Straight</field>
+<field>Barbara van Bebber</field>
+<field>Becky Wilcox</field>
+<field>Belinda Glasby</field>
+<field>Ben Carter</field>
+<field>Benjamin Ciotti</field>
+<field>Benoit Espiau</field>
+<field>Bernadette Holthuis</field>
+<field>Beth Stern</field>
+<field>Bier Kraichak</field>
+<field>BioCode IZ team</field>
+<field>BioCode IZ/ARMS team</field>
+<field>Blais Ah-Sam</field>
+<field>Blue Crab Winter Dredge Survey</field>
+<field>Brad Wright</field>
+<field>Bradley Balukjian</field>
+<field>Brandon Endo</field>
+<field>BRCINDO</field>
+<field>Brent Mishler</field>
+<field>Brian Montenegro</field>
+<field>Bruce Brandt</field>
+<field>BSCIT Staff</field>
+<field>Buzzy</field>
+<field>C. A. Ruckdeschel</field>
+<field>C. A. Shaw</field>
+<field>C. Brown</field>
+<field>C. Burwell</field>
+<field>C. Chaboo</field>
+<field>C. Chagas-Vieira</field>
+<field>C. Gebhard</field>
+<field>C. Griswold</field>
+<field>C. J. Angle</field>
+<field>C. J. Raxworthy</field>
+<field>C. Lambkin</field>
+<field>C. M. Kinsey</field>
+<field>C. Maier</field>
+<field>C. Nogueira</field>
+<field>C. O. Handley</field>
+<field>C. P. Driscoll</field>
+<field>C. Raxworthy</field>
+<field>C. Shaw</field>
+<field>C. Skinder</field>
+<field>C. Vink</field>
+<field>C. W. Potter</field>
+<field>C. Weirauch</field>
+<field>C. Wicker</field>
+<field>Caitlin Morrison</field>
+<field>Camille Gaynus</field>
+<field>Candy Teriinohorai</field>
+<field>Carole Baldwin</field>
+<field>Carolyn Kobervig</field>
+<field>Cécile Debitus</field>
+<field>Cecile Gaspar</field>
+<field>Cervantes</field>
+<field>Charles Lydeard</field>
+<field>Charlotte Watson</field>
+<field>Chloe Henderson</field>
+<field>Chloe Howard</field>
+<field>Chloé Raoult</field>
+<field>Chris Ahlgren</field>
+<field>Chris Glasby</field>
+<field>Chris Meyer</field>
+<field>Christopher Ludvik</field>
+<field>Cindy Haiston</field>
+<field>Claire Etienne</field>
+<field>Claude Payri</field>
+<field>Cohina Murphy</field>
+<field>Conner Dibble</field>
+<field>Connor Dibble</field>
+<field>Coralie Vermenot</field>
+<field>Cory Pittman</field>
+<field>Craig Moritz</field>
+<field>Craig Starger</field>
+<field>Cristina Castillo</field>
+<field>Curtis Ewing</field>
+<field>Curtis Ewing and Andrew Brennan</field>
+<field>Custom Authorities</field>
+<field>Cygler</field>
+<field>D. A. Pabst</field>
+<field>D. Amorim</field>
+<field>D. Birtele</field>
+<field>D. Duffield</field>
+<field>D. E. Carr</field>
+<field>D. E. Wilson</field>
+<field>D. L. Rothwell</field>
+<field>D. Painter</field>
+<field>D. Pritchard</field>
+<field>D. Priyadarsanan</field>
+<field>D. Takiya</field>
+<field>D. Tree</field>
+<field>D. Wolff</field>
+<field>D. Yeates</field>
+<field>Dan Nedwidek</field>
+<field>Dan Polhemus</field>
+<field>Daniel Mulcahy</field>
+<field>Daniele Macedo</field>
+<field>Danielle Desmet</field>
+<field>Danielle Pena</field>
+<field>Danny Kennedy</field>
+<field>Dave Pence</field>
+<field>David G. Smith</field>
+<field>David Hembry</field>
+<field>David Lecchini</field>
+<field>David Liittschwager</field>
+<field>David Reed</field>
+<field>David Touitou</field>
+<field>Daysuke Uyeno</field>
+<field>Dean Janiak</field>
+<field>Deena Garrett</field>
+<field>Defy Pada</field>
+<field>Derek Cox</field>
+<field>Dian Pertiwi</field>
+<field>Diana M. Percy</field>
+<field>Dita Cahyani</field>
+<field>Dominique Ponton</field>
+<field>Dutch Schrier</field>
+<field>E. A. Leboeuf</field>
+<field>E. Almeida</field>
+<field>E. Alvim</field>
+<field>E. Claridge</field>
+<field>E. Cuellar H.</field>
+<field>E. D. Mitchell</field>
+<field>E. Fisher</field>
+<field>E. Hoebeke</field>
+<field>E. J. Stetzar</field>
+<field>E. K. Kalko</field>
+<field>E. P. Nelson</field>
+<field>E. Raholimaro</field>
+<field>E. Raholimavo</field>
+<field>E. Schlinger</field>
+<field>E. Stephens</field>
+<field>Edward Braun</field>
+<field>Edy Setyawan</field>
+<field>Eka Maya Kurniasih</field>
+<field>Elaine Fok</field>
+<field>Elijah Talamas</field>
+<field>Elin Claridge</field>
+<field>Ellarae Miner</field>
+<field>Ellen Strong</field>
+<field>Elliot Chan</field>
+<field>Elodie Vogel</field>
+<field>Emily Hornett</field>
+<field>Emily Schmeltzer</field>
+<field>Emma Ransome</field>
+<field>Emmanuel Roberts</field>
+<field>Enoha Riveta</field>
+<field>Erdi Lazuardy</field>
+<field>Eric Clua</field>
+<field>Eric Hester</field>
+<field>Erica Spotswood</field>
+<field>Erica Warkus</field>
+<field>Erin Farr</field>
+<field>Evi Saunders</field>
+<field>F. Andrews</field>
+<field>F. Cresswell</field>
+<field>F. del Aguila</field>
+<field>F. Geller-Grimm</field>
+<field>F. Godoi</field>
+<field>F. Grady</field>
+<field>F. Hort</field>
+<field>F. Kinbag</field>
+<field>F. M. Greenwell</field>
+<field>F. Parker</field>
+<field>F. Rodriguez</field>
+<field>F. Ronquist</field>
+<field>F. Soffel</field>
+<field>F. Turco</field>
+<field>Farrah Soffel</field>
+<field>Fawn Cambon</field>
+<field>Felix Lorenz</field>
+<field>Fenuaura Richmond</field>
+<field>Filane Aroquiame</field>
+<field>Flaminia Tepau Tiihiva</field>
+<field>Francesca Leasi</field>
+<field>Francis</field>
+<field>Franck Lerouvreur</field>
+<field>Francois Desinor</field>
+<field>Francois Michonneau</field>
+<field>Frank Murphy</field>
+<field>Franklin Brightwater</field>
+<field>Fred Jacq</field>
+<field>Fred Pleijel</field>
+<field>Freya Goetz</field>
+<field>G. Ballmer</field>
+<field>G. Brown</field>
+<field>G. Courtney</field>
+<field>G. Grey</field>
+<field>G. J. Jacobs</field>
+<field>G. K. Creighton</field>
+<field>G. King</field>
+<field>G. Leite</field>
+<field>G. Monte</field>
+<field>G. Monteith</field>
+<field>G. Paleudis</field>
+<field>G. R. Zug</field>
+<field>G. Shurgart</field>
+<field>G. Svenson</field>
+<field>G. W. Barrett</field>
+<field>G. Zhang</field>
+<field>Gary Poore</field>
+<field>Genelle Harrison</field>
+<field>George Hecht</field>
+<field>George K. Roderick</field>
+<field>George Roderick</field>
+<field>Germain Raitini</field>
+<field>Gina Carrillo</field>
+<field>Gina McGuire</field>
+<field>GK-12 April 3 2009 Field Trip</field>
+<field>Grand Pittman Natura</field>
+<field>Greg Rouse</field>
+<field>Gustav Paulay</field>
+<field>H-C Liu</field>
+<field>H. D. Bradshaw</field>
+<field>H. Fearnbach</field>
+<field>H. Killian</field>
+<field>H. Lanier</field>
+<field>H. N. Koopman</field>
+<field>H. Noori</field>
+<field>H. Pohl</field>
+<field>H. Walsh</field>
+<field>Hannah Stewart</field>
+<field>Harrison Rowan</field>
+<field>Harry Palm</field>
+<field>Hawaiki Teriinohorai</field>
+<field>Heia Teraiharoa</field>
+<field>Hélios Collins</field>
+<field>Herenui Mahuta</field>
+<field>Herman Wirshing</field>
+<field>Herton Escobar</field>
+<field>Hinanui Fournier</field>
+<field>Hitirere Bonno</field>
+<field>Hivanui Maiarii</field>
+<field>Homai Howel-Tonohiti</field>
+<field>Hsiu-Chin Lin</field>
+<field>Huna Homai</field>
+<field>Hunter Lenihan</field>
+<field>I. Ailes</field>
+<field>I. G. Phillips</field>
+<field>I. Winkler</field>
+<field>Ian Copping</field>
+<field>Ian Rose</field>
+<field>Ian Silver-Gorges</field>
+<field>Ian Will</field>
+<field>IBRC 2012 class</field>
+<field>IBRC 2013 Class</field>
+<field>Ichsan Ananda Putra</field>
+<field>Ioane McIlroy</field>
+<field>Ipeva Gitton</field>
+<field>Irene Chen</field>
+<field>Itchika Sivaipram</field>
+<field>Ivan Glasby</field>
+<field>J. Almeida</field>
+<field>J. Ascher</field>
+<field>J. Barriga</field>
+<field>J. Bartlett</field>
+<field>J. Cox</field>
+<field>J. Evans</field>
+<field>J. F. Jacobs</field>
+<field>J. Frazier</field>
+<field>J. Friedman</field>
+<field>J. G. Mead</field>
+<field>J. Garner</field>
+<field>J. Gillung</field>
+<field>J. Hoffman</field>
+<field>J. Holly</field>
+<field>J. Hort</field>
+<field>J. J. Short</field>
+<field>J. Jones</field>
+<field>J. Lagrange</field>
+<field>J. Litz</field>
+<field>J. Londt</field>
+<field>J. M. Coe</field>
+<field>J. M. Rojas</field>
+<field>J. M. Ryan</field>
+<field>J. Matthews</field>
+<field>J. Meltzer</field>
+<field>J. O. Matson</field>
+<field>J. P. Angle</field>
+<field>J. Parish</field>
+<field>J. Rafael</field>
+<field>J. Recsei</field>
+<field>J. Schuster</field>
+<field>J. Skevington</field>
+<field>J. Smit</field>
+<field>J. Smith</field>
+<field>J. Vidal</field>
+<field>J. Weaver</field>
+<field>J.-M. MaldÃ¨s</field>
+<field>J.M. Maldès</field>
+<field>J.T. Boehm</field>
+<field>Jack Roland</field>
+<field>Jada Simon White</field>
+<field>James Liebherr</field>
+<field>James Morin</field>
+<field>James Russell</field>
+<field>James Thomas</field>
+<field>Jamie Whitacre</field>
+<field>Jean Letournaux</field>
+<field>Jean Letourneux</field>
+<field>Jean-Francois Butaud</field>
+<field>Jean-Louis Menou</field>
+<field>Jean-Yves Meyer</field>
+<field>Jeff Cordell</field>
+<field>Jeff Jones</field>
+<field>Jeffrey Hunt</field>
+<field>Jeffrey T. Williams</field>
+<field>Jeni</field>
+<field>Jenna Moore</field>
+<field>Jennifer Keliher</field>
+<field>Jenny Dreyer</field>
+<field>Jerome Petit</field>
+<field>Jessica Maciel</field>
+<field>Jim Hayward</field>
+<field>Jimmy A. McGuire</field>
+<field>Jimmy Mornet</field>
+<field>Jimmy O'Donnell</field>
+<field>Joe C. Spagna</field>
+<field>Joel Nitta</field>
+<field>Johan Yvelin</field>
+<field>John Deck</field>
+<field>John Earle</field>
+<field>John Houder</field>
+<field>John Slapcinsky</field>
+<field>Jon Norenburg</field>
+<field>Jonas Maravalhas</field>
+<field>Jonathan Cambon</field>
+<field>Jonathan Delalande</field>
+<field>Jonathan Geller</field>
+<field>Joseph Poupin</field>
+<field>Josua Tuahiva</field>
+<field>JUIN</field>
+<field>Jules-Marin Lejeune</field>
+<field>Julie Grandgirard</field>
+<field>Julie Hassen</field>
+<field>Julien Grignon</field>
+<field>K. Bayless</field>
+<field>K. England</field>
+<field>K. M. Helgen</field>
+<field>K. M. Sayles</field>
+<field>K. M. Touhey</field>
+<field>K. Miller</field>
+<field>K. S. Smith</field>
+<field>K. Williams</field>
+<field>Kahaia Faatauira</field>
+<field>Karen Osborn</field>
+<field>Kari Jackson</field>
+<field>Kate Hanson</field>
+<field>Katie Hendrickson</field>
+<field>Katie Knick</field>
+<field>Katie Sievers</field>
+<field>Kealoha Teriitahi</field>
+<field>Keani Lo</field>
+<field>Kelly Maro</field>
+<field>Keshi Fuller</field>
+<field>Kirk Johnson</field>
+<field>Kris Netchy</field>
+<field>Kristine White</field>
+<field>Kyra Schlining</field>
+<field>L. A. Gelvin-Innvaer</field>
+<field>L. Cezar</field>
+<field>L. Collins</field>
+<field>L. Gaibou Hogei</field>
+<field>L. Gardner</field>
+<field>L. Gore</field>
+<field>L. H. Emmons</field>
+<field>L. J. McLellan</field>
+<field>L. Kimsey</field>
+<field>L. L. Wong</field>
+<field>L. Measures</field>
+<field>L. Wunder</field>
+<field>La Vonne Englund</field>
+<field>Laetitia Plaisance</field>
+<field>Lainie Moreux</field>
+<field>Laiza Teharuru</field>
+<field>Lanna Cheng</field>
+<field>Lauren Stefaniak</field>
+<field>Lauren Williams</field>
+<field>Laurie Penland</field>
+<field>Lee Weigt</field>
+<field>Leilanie Pangier</field>
+<field>Leina ala Hall</field>
+<field>Les Watling</field>
+<field>Lin Yonglie</field>
+<field>Lindsey Tribondeau</field>
+<field>Liston</field>
+<field>Livia Tetiarahi</field>
+<field>Local Fishermen</field>
+<field>Louison</field>
+<field>Loulin Otime</field>
+<field>Lourdes Chamorro</field>
+<field>Lucie Billon</field>
+<field>Lucie Faulquier</field>
+<field>Lydia Baker</field>
+<field>Lydia Smith</field>
+<field>Lydiane Mattio</field>
+<field>M. Bratz</field>
+<field>M. C. Baker</field>
+<field>M. Cristina Diaz</field>
+<field>M. D. Opiang</field>
+<field>M. Deyrup</field>
+<field>M. Fitch</field>
+<field>M. Hauser</field>
+<field>M. Hille</field>
+<field>M. Irwin</field>
+<field>M. Ismail</field>
+<field>M. J. Kennedy</field>
+<field>M. J. Swarner</field>
+<field>M. Jefferies</field>
+<field>M. Juma</field>
+<field>M. Klope</field>
+<field>M. Kotrba</field>
+<field>M. L. Socha</field>
+<field>M. Millar</field>
+<field>M. Moore</field>
+<field>M. Mostovski</field>
+<field>M. P. Hare</field>
+<field>M. R. Romo</field>
+<field>M. Ratnaswamy</field>
+<field>M. Schwartz</field>
+<field>M. Scott Jones</field>
+<field>M. Terry</field>
+<field>M. Thomas</field>
+<field>M. van Dam</field>
+<field>M. W. Varn</field>
+<field>M. Whiting</field>
+<field>Machel Malay</field>
+<field>Maeva Besson</field>
+<field>Mahinui Russel</field>
+<field>Maire Pean</field>
+<field>Malu Yoshida</field>
+<field>Mandy Bemis</field>
+<field>Manea Selig</field>
+<field>Manutea Couterel</field>
+<field>Marama Persin</field>
+<field>Marc Fabresse</field>
+<field>Marcus Vaitu</field>
+<field>Margarita Hadjistylli</field>
+<field>Margotte Genoud</field>
+<field>Maria Tonione</field>
+<field>Maria Zizka</field>
+<field>Marie Fourdrigniez</field>
+<field>Marie-Catherine Bosselier</field>
+<field>Marine Mammal Stranding Center</field>
+<field>Marjorie Saillan</field>
+<field>Mark Little</field>
+<field>Mart</field>
+<field>Marta deMaintenon</field>
+<field>Martien Baars</field>
+<field>Maruatea Fanaurai</field>
+<field>Masriana</field>
+<field>Mathilde Williams</field>
+<field>Matohi Pitoura</field>
+<field>Matt Buffington</field>
+<field>Matt McElroy</field>
+<field>Matteo Garbelotto</field>
+<field>Matthias Vignon</field>
+<field>Matthieu Leray</field>
+<field>Maxime Beraud</field>
+<field>Maxime Galerne</field>
+<field>Maya deVries</field>
+<field>MD Department of Natural Resources</field>
+<field>Meaghan Parker</field>
+<field>Megan Wallis</field>
+<field>Melissa Frey</field>
+<field>Melissa Nadin</field>
+<field>Melissa Prybis</field>
+<field>Melissa Spitler</field>
+<field>Menelaos Stavrinides</field>
+<field>Michael Gates</field>
+<field>Michael Goodison</field>
+<field>Michael Shapiro</field>
+<field>Michael Vamstad</field>
+<field>Michel Maihi</field>
+<field>Michel Veuille</field>
+<field>Michele Weber</field>
+<field>Michelle Weber</field>
+<field>Midge Kramer</field>
+<field>Mihiarii Lowgreen</field>
+<field>Mike Hickerson</field>
+<field>Mike Trizna</field>
+<field>Milada Tehono</field>
+<field>MINV 2009 Team</field>
+<field>MINV 2010 Team</field>
+<field>Mirabelle Raparii</field>
+<field>Misty Roland</field>
+<field>Moemoe Vahirua</field>
+<field>Molly Wright</field>
+<field>Muhammad Dailami</field>
+<field>Muhammad Zoel Ikram Noer</field>
+<field>Myra Shulman</field>
+<field>N. Allan</field>
+<field>N. Bernal</field>
+<field>N. Ordonez-Garza</field>
+<field>N. Rocha S.</field>
+<field>N. Starick</field>
+<field>N. Woodman</field>
+<field>Nancy Knowlton</field>
+<field>Narendra Putra</field>
+<field>Natalie Mary</field>
+<field>Natalie Reeder</field>
+<field>Nathalie Machon</field>
+<field>Nathalie Mary</field>
+<field>Nathalie Uhl</field>
+<field>Neil Davies</field>
+<field>Nerida Wilson</field>
+<field>New England Aquarium</field>
+<field>Niamh Redmond</field>
+<field>Nicholas Fletcher</field>
+<field>Nick Fletcher</field>
+<field>Nick Porch</field>
+<field>Nicolas Buray</field>
+<field>Nicolas Hubert</field>
+<field>Nicole Gravier-Bonnet</field>
+<field>NMFS</field>
+<field>NMFS-Beaufort</field>
+<field>Norm Woodley</field>
+<field>Novianto Hary Adiatmaja</field>
+<field>NV Whelan</field>
+<field>O. Stevens</field>
+<field>Oka Pujawan</field>
+<field>Oliver Flint</field>
+<field>Olivia Cohen</field>
+<field>Olivia Walton</field>
+<field>Olivier Gargominy</field>
+<field>Onny Nurrahman</field>
+<field>Oris Sanjur</field>
+<field>Oscar Gavira</field>
+<field>P. Bouchard</field>
+<field>P. C. Beamish</field>
+<field>P. Dias</field>
+<field>P. Grootaert</field>
+<field>P. Kerr</field>
+<field>P. Kreohler</field>
+<field>P. Kroehler</field>
+<field>P. Pynenberg</field>
+<field>P. Rhymer</field>
+<field>P. Skelley</field>
+<field>P. Stevens</field>
+<field>P. T. Martone</field>
+<field>Parker</field>
+<field>Pascal Titifa</field>
+<field>Pascal Ung</field>
+<field>Patricia Gómez</field>
+<field>Patrick Plantard</field>
+<field>Paul Barber</field>
+<field>Paul Delaney</field>
+<field>Paul Richardson</field>
+<field>PERCEVAL</field>
+<field>Peter T. Oboyski</field>
+<field>Petersen</field>
+<field>Phil Bock</field>
+<field>Philippe Bacchet</field>
+<field>Philippe Bachet</field>
+<field>Philippe Bouchet</field>
+<field>Phillippe Bacchet</field>
+<field>Pierre Sasal</field>
+<field>Pierre-Yves Cousteau</field>
+<field>Princess Gilbert</field>
+<field>Punua Terooatea</field>
+<field>R. A. Blaylock</field>
+<field>R. Aalbu</field>
+<field>R. Albul</field>
+<field>R. B. Clapp</field>
+<field>R. Burley</field>
+<field>R. C. Schad</field>
+<field>R. C. Schoelkopf</field>
+<field>R. Cavichioli</field>
+<field>R. D. Fisher</field>
+<field>R. Dalton</field>
+<field>R. E. Jones</field>
+<field>R. E. LoPiccolo</field>
+<field>R. Flowers</field>
+<field>R. Freitas-Silva</field>
+<field>R. HarinHala</field>
+<field>R. I. Crombie</field>
+<field>R. M. Timm</field>
+<field>R. Machado</field>
+<field>R. Marchant</field>
+<field>R. Marraccino</field>
+<field>R. Meier</field>
+<field>R. N. Fisher</field>
+<field>R. Nawojchik</field>
+<field>R. P. Eckerlin</field>
+<field>R. Stephens</field>
+<field>R. Tegge</field>
+<field>R. Vieira</field>
+<field>R. Wharton</field>
+<field>R. Yinger</field>
+<field>R. Zamorand</field>
+<field>Rahiti Hunter</field>
+<field>Raianu Estebe</field>
+<field>Raimana Teuraurii</field>
+<field>Rainui Teriinohorai</field>
+<field>Raphael Witson-Williams</field>
+<field>Rauhotu Autai</field>
+<field>Rautea Vongue</field>
+<field>Rautere Teharuru</field>
+<field>Ravahere Nehemia</field>
+<field>Ravahere Taputuarai</field>
+<field>Rebecca Johnson</field>
+<field>Rene Galzin</field>
+<field>Reo Terai</field>
+<field>Richard Pyle</field>
+<field>Rick Hochberg</field>
+<field>Rick Osman</field>
+<field>Rico Haring</field>
+<field>Rikki Dunsmore</field>
+<field>Rita Rachmawati</field>
+<field>Rizki Wulandari</field>
+<field>Rob Adlard</field>
+<field>Rob Lasley</field>
+<field>Rob Whitten</field>
+<field>Robby Teuira</field>
+<field>Robert Adland</field>
+<field>Robert Aguilar</field>
+<field>Robert Fisher</field>
+<field>Robert Kula</field>
+<field>Robin Pouteau</field>
+<field>Rod Bray</field>
+<field>Rodney Bray</field>
+<field>Roger Sant</field>
+<field>Rogo Agnie</field>
+<field>Romain Causse</field>
+<field>Ronald Englund</field>
+<field>Ronan Dieutegard</field>
+<field>Ronesta Zamorano</field>
+<field>Rosemary Gillespie</field>
+<field>Roxane Lievens</field>
+<field>Roy Caldwell</field>
+<field>Rudy Horoi</field>
+<field>Rury Eprilurahman</field>
+<field>Ryan Wilson</field>
+<field>Ryuji Machida</field>
+<field>S. Blank</field>
+<field>S. Bourgeois</field>
+<field>S. Brownins</field>
+<field>S. Bybee</field>
+<field>S. C. Peurach</field>
+<field>S. D. Zvalaren</field>
+<field>S. G. Barco</field>
+<field>S. Gaimari</field>
+<field>S. Gardner</field>
+<field>S. Geange</field>
+<field>S. Godley</field>
+<field>S. Knowles</field>
+<field>S. M. Goodman</field>
+<field>S. Meyer</field>
+<field>S. Miller</field>
+<field>S. Mooney</field>
+<field>S. P. Collins</field>
+<field>S. Patris</field>
+<field>S. S. Sadove</field>
+<field>S. Thurman</field>
+<field>S. Winterton</field>
+<field>S. Wright</field>
+<field>Sadove Okeanos</field>
+<field>Sai Wunna Kyi</field>
+<field>Samantha Cheng</field>
+<field>Sammy Davis</field>
+<field>Sarah Bergemann</field>
+<field>Sarah McPherson</field>
+<field>Sarah Tweedt</field>
+<field>Scott Fay</field>
+<field>Seabird McKeon</field>
+<field>Sean Brady</field>
+<field>Serge Gofas</field>
+<field>Serge Planes</field>
+<field>Shane W Geange</field>
+<field>Shane W. Geange</field>
+<field>Shannon Kanakaole</field>
+<field>Shanshan He</field>
+<field>Shanteal Nazario</field>
+<field>Sharein El-Tourky</field>
+<field>Sharlene Braginton</field>
+<field>Shelby E. Boyer</field>
+<field>Sherly Xhan</field>
+<field>Sherry Reed</field>
+<field>Sienna Witthans</field>
+<field>SLAB User</field>
+<field>Soad</field>
+<field>Soto</field>
+<field>Stacy Havard</field>
+<field>Stephanie Bush</field>
+<field>Stephanie Juncqua</field>
+<field>Stephen Harris</field>
+<field>Steve Haddock</field>
+<field>Steve Lingafelter</field>
+<field>Steve Stones-Havas</field>
+<field>Stocks</field>
+<field>Stosh Ozog</field>
+<field>Stuart McKamey</field>
+<field>Susan Von Thun</field>
+<field>Sutra Anjani</field>
+<field>Suzanne Vinette</field>
+<field>Sylvain Charlat</field>
+<field>Sylvain Petek</field>
+<field>T. Fabean</field>
+<field>T. J. Mcintyre</field>
+<field>T. J. Parsons</field>
+<field>T. L. Kimmel</field>
+<field>T. L. Sullivan</field>
+<field>T. M. Duffy</field>
+<field>T. Pitchford</field>
+<field>T. Stamps</field>
+<field>T. Tarifa</field>
+<field>Taeger</field>
+<field>Tamatea Denarie</field>
+<field>Tapunui Adams</field>
+<field>Tara Cambon</field>
+<field>Tautua Tapotofarerani</field>
+<field>Tawnisha Martinez</field>
+<field>TDWG User</field>
+<field>Teague Costello</field>
+<field>Tehaamoana You-Sing</field>
+<field>Tehehea Tapotofarerani</field>
+<field>Tehere Nehemia</field>
+<field>Tehine Tavi</field>
+<field>Temanu Teihotu</field>
+<field>Temauri Vaimeho</field>
+<field>Tepoea Taata</field>
+<field>Tereroa Tereitua</field>
+<field>Teretini Teihotaata</field>
+<field>Terika Gillot</field>
+<field>Terry Gosliner</field>
+<field>Teschendorf</field>
+<field>Tevero Purotu</field>
+<field>Thibault Ramage</field>
+<field>Thomas Cribb</field>
+<field>Thomas Henry</field>
+<field>Tiara Moore</field>
+<field>Tiare Brenda</field>
+<field>Tiarii Papara</field>
+<field>Tikanui Smith</field>
+<field>Timeri Thieme</field>
+<field>Timothée Lejeune</field>
+<field>Tipari Haumani</field>
+<field>Tito Lotufo</field>
+<field>Titouan Bernicot</field>
+<field>Tiva Sogado</field>
+<field>TJ Yockachonis</field>
+<field>Todd Osmundson</field>
+<field>Tom Adam</field>
+<field>Tom Cribb</field>
+<field>Torea Tamaehu</field>
+<field>Torsten Dikow</field>
+<field>Touhiti Smidt</field>
+<field>Tyler McCraney</field>
+<field>Ucu Arbi</field>
+<field>V. 1. Nmfs Necropsy Cruise</field>
+<field>V. Chavez C.</field>
+<field>V. G. Thayer</field>
+<field>V. Jacinto</field>
+<field>V. Pacheco</field>
+<field>Vahinenui Lucas</field>
+<field>Vaiarii Raoulx</field>
+<field>Vaimiti Eperania</field>
+<field>Vainatea Ti Paon</field>
+<field>Vairani Barff</field>
+<field>Vaiti Germain</field>
+<field>Vanessa Blair Lovenburg</field>
+<field>Vanessa Lovenburg</field>
+<field>Vanessa Messmer</field>
+<field>Vetea Liao</field>
+<field>Viacheslav Ivanenko</field>
+<field>Victoria Hosford</field>
+<field>Victoria Morgan</field>
+<field>Viliame Pita Waqalevu</field>
+<field>VIMS Dredge Survey</field>
+<field>VIMS Trawl Survey</field>
+<field>Vinnie Moriarity</field>
+<field>Virginia Institute of Marine Science</field>
+<field>Virginia Marine Science Museum</field>
+<field>Viteo Liao</field>
+<field>W. A. McLellan</field>
+<field>W. Bulmer</field>
+<field>W. C. Wozencraft</field>
+<field>W. Cook</field>
+<field>W. F. Perrin</field>
+<field>W. Hwang</field>
+<field>W. J. Bowen</field>
+<field>W. J. Walton</field>
+<field>W. Jones</field>
+<field>W. M. Swingle</field>
+<field>W. Reynolds</field>
+<field>W. Steiner</field>
+<field>Wallis Tribondeau</field>
+<field>Wang Dengfu</field>
+<field>Wayan Dedieu</field>
+<field>Weimea Taputu</field>
+<field>Wendy Fanaurai</field>
+<field>Williams Teata</field>
+<field>Willow Jorgensen</field>
+<field>Win Zaw Lhon</field>
+<field>Woody Lee</field>
+<field>Wuthicahi Kwanjam</field>
+<field>Yannick Chancerelle</field>
+<field>Yasunori Kano</field>
+<field>Yolande Vahirua</field>
+<field>Yuliana Fitri Syamsuni</field>
+<field>Zacharie Huber</field>
+<field>Zackary Shima</field>
+</metadata>
+
+<metadata name='list2' alias='preservative'>
+<field>10% formalin</field>
+<field>10% formalin and 75% ethanol</field>
+<field>100% ethanol</field>
+<field>75% ethanol</field>
+<field>80% ethanol</field>
+<field>80% isopropanol</field>
+<field>90% ethanol</field>
+<field>95% ethanol</field>
+<field>96% ethanol</field>
+<field>block</field>
+<field>Bouin's fixative</field>
+<field>DMSO</field>
+<field>dry</field>
+<field>ethanol</field>
+<field>formalin</field>
+<field>formalin and 75% ethanol</field>
+<field>formalin and 95% ethanol</field>
+<field>frozen formalin</field>
+<field>FTA paper</field>
+<field>glutaraldehyde</field>
+<field>leash</field>
+<field>liquid nitrogen</field>
+<field>Longmire's solution</field>
+<field>M2 buffer</field>
+<field>none (for -20)</field>
+<field>none (for -80)</field>
+<field>osmium tetroxide</field>
+<field>RNAlater</field>
+<field>silica gel</field>
+</metadata>
+
+<metadata name='list3' alias='relaxant'>
+<field>chloretone</field>
+<field>clove oil</field>
+<field>ethyl acetate</field>
+<field>ethylene glycol</field>
+<field>freezer</field>
+<field>frozen</field>
+<field>ice</field>
+<field>Kibble</field>
+<field>menthol</field>
+<field>menthol</field>
+<field>MgCl</field>
+<field>nicotine</field>
+<field>propylene phenoxitol</field>
+<field>refrigeration</field>
+<field>Tricaine</field>
+</metadata>
+
+<metadata name='list4' alias='container'>
+<field>0.65 eppendorf</field>
+<field>1.2 ul Cryovial</field>
+<field>1.4 ml TrackMate 2D barcoded storage tube</field>
+<field>1.5 Eppindorf Tube</field>
+<field>15 ml Falcon Tube</field>
+<field>2 ml 96 well assay block</field>
+<field>2.0 ml Cryovial</field>
+<field>2.0 ul Cryovial</field>
+<field>2.5 ml biopsy vial</field>
+<field>50 ml Falcon Tube</field>
+<field>bag in ziploc with silica gel</field>
+<field>FTA 96 well sheet</field>
+<field>glass vial</field>
+<field>microscope_slide</field>
+<field>Whirlpack</field>
+</metadata>
+
+<metadata name='list5' alias='Country'>
+<field></field>
+<field>Afghanistan</field>
+<field>Albania</field>
+<field>Algeria</field>
+<field>American Samoa</field>
+<field>Andorra</field>
+<field>Angola</field>
+<field>Anguilla</field>
+<field>Antarctica</field>
+<field>Antigua and Barbuda</field>
+<field>Argentina</field>
+<field>Armenia</field>
+<field>Aruba</field>
+<field>Australia</field>
+<field>Austria</field>
+<field>Azerbaijan</field>
+<field>Bahamas</field>
+<field>Bahrain</field>
+<field>Bangladesh</field>
+<field>Barbados</field>
+<field>Belarus</field>
+<field>Belgium</field>
+<field>Belize</field>
+<field>Benin</field>
+<field>Bermuda</field>
+<field>Bhutan</field>
+<field>Bolivia</field>
+<field>Bosnia and Herzegovina</field>
+<field>Botswana</field>
+<field>Bouvet Island</field>
+<field>Brazil</field>
+<field>British Indian Ocean Territory</field>
+<field>Brunei Darussalam</field>
+<field>Bulgaria</field>
+<field>Burkina Faso</field>
+<field>Burundi</field>
+<field>Cambodia</field>
+<field>Cameroon</field>
+<field>Canada</field>
+<field>Cape Verde</field>
+<field>Cayman Islands</field>
+<field>Central African Republic</field>
+<field>Chad</field>
+<field>Chile</field>
+<field>China</field>
+<field>Christmas Island</field>
+<field>Cocos (Keeling) Islands</field>
+<field>Colombia</field>
+<field>Comoros</field>
+<field>Congo</field>
+<field>Congo, the Democratic Republic of the</field>
+<field>Cook Islands</field>
+<field>Costa Rica</field>
+<field>Cote d'Ivoire</field>
+<field>Croatia</field>
+<field>Cuba</field>
+<field>Cyprus</field>
+<field>Czech Republic</field>
+<field>Denmark</field>
+<field>Djibouti</field>
+<field>Dominica</field>
+<field>Dominican Republic</field>
+<field>East Timor</field>
+<field>Ecuador</field>
+<field>Egypt</field>
+<field>El Salvador</field>
+<field>Equatorial Guinea</field>
+<field>Eritrea</field>
+<field>Estonia</field>
+<field>Ethiopia</field>
+<field>Falkland Islands (Malvinas)</field>
+<field>Faroe Islands</field>
+<field>Fiji</field>
+<field>Finland</field>
+<field>France</field>
+<field>French Guiana</field>
+<field>French Polynesia</field>
+<field>French Southern Territories</field>
+<field>Gabon</field>
+<field>Gambia</field>
+<field>Georgia</field>
+<field>Germany</field>
+<field>Ghana</field>
+<field>Gibraltar</field>
+<field>Greece</field>
+<field>Greenland</field>
+<field>Grenada</field>
+<field>Guadeloupe</field>
+<field>Guam</field>
+<field>Guatemala</field>
+<field>Guinea</field>
+<field>Guinea-Bissau</field>
+<field>Guyana</field>
+<field>Haiti</field>
+<field>Heard Island and McDonald Islands</field>
+<field>Holy See (Vatican City State)</field>
+<field>Honduras</field>
+<field>Hong Kong</field>
+<field>Hungary</field>
+<field>Iceland</field>
+<field>India</field>
+<field>Indonesia</field>
+<field>Iran, Islamic Republic of</field>
+<field>Iraq</field>
+<field>Ireland</field>
+<field>Israel</field>
+<field>Italy</field>
+<field>Jamaica</field>
+<field>Japan</field>
+<field>Jordan</field>
+<field>Kazakhstan</field>
+<field>Kenya</field>
+<field>Kiribati</field>
+<field>Korea, Democratic People's Republic of</field>
+<field>Korea, Republic of</field>
+<field>Kuwait</field>
+<field>Kyrgyzstan</field>
+<field>Lao People's Democratic Republic</field>
+<field>Latvia</field>
+<field>Lebanon</field>
+<field>Lesotho</field>
+<field>Liberia</field>
+<field>Libyan Arab Jamahiriya</field>
+<field>Liechtenstein</field>
+<field>Lithuania</field>
+<field>Luxembourg</field>
+<field>Macau</field>
+<field>Macedonia, the Former Yugoslav Republic of</field>
+<field>Madagascar</field>
+<field>Malawi</field>
+<field>Malaysia</field>
+<field>Maldives</field>
+<field>Mali</field>
+<field>Malta</field>
+<field>Marshall Islands</field>
+<field>Martinique</field>
+<field>Mauritania</field>
+<field>Mauritius</field>
+<field>Mayotte</field>
+<field>Mexico</field>
+<field>Micronesia, Federated States of</field>
+<field>Moldova, Republic of</field>
+<field>Monaco</field>
+<field>Mongolia</field>
+<field>Montenegro</field>
+<field>Montserrat</field>
+<field>Morocco</field>
+<field>Mozambique</field>
+<field>Myanmar</field>
+<field>Namibia</field>
+<field>Nauru</field>
+<field>Nepal</field>
+<field>Netherlands</field>
+<field>Netherlands Antilles</field>
+<field>New Caledonia</field>
+<field>New Zealand</field>
+<field>Nicaragua</field>
+<field>Niger</field>
+<field>Nigeria</field>
+<field>Niue</field>
+<field>Norfolk Island</field>
+<field>Northern Mariana Islands</field>
+<field>Norway</field>
+<field>Oman</field>
+<field>Pakistan</field>
+<field>Palau</field>
+<field>Palestinian Territory, Occupied</field>
+<field>Panama</field>
+<field>Papua New Guinea</field>
+<field>Paraguay</field>
+<field>Peru</field>
+<field>Philippines</field>
+<field>Pitcairn</field>
+<field>Poland</field>
+<field>Portugal</field>
+<field>Puerto Rico</field>
+<field>Qatar</field>
+<field>RÉunion</field>
+<field>Romania</field>
+<field>Russian Federation</field>
+<field>Rwanda</field>
+<field>Saint Helena</field>
+<field>Saint Kitts and Nevis</field>
+<field>Saint Lucia</field>
+<field>Saint Pierre and Miquelon</field>
+<field>Saint Vincent and the Grenadines</field>
+<field>Samoa</field>
+<field>San Marino</field>
+<field>Sao Tome and Principe</field>
+<field>Saudi Arabia</field>
+<field>Senegal</field>
+<field>Serbia</field>
+<field>Seychelles</field>
+<field>Sierra Leone</field>
+<field>Singapore</field>
+<field>Slovakia</field>
+<field>Slovenia</field>
+<field>Solomon Islands</field>
+<field>Somalia</field>
+<field>South Africa</field>
+<field>South Georgia and the South Sandwich Islands</field>
+<field>Spain</field>
+<field>Sri Lanka</field>
+<field>Sudan</field>
+<field>Suriname</field>
+<field>Svalbard and Jan Mayen</field>
+<field>Swaziland</field>
+<field>Sweden</field>
+<field>Switzerland</field>
+<field>Syrian Arab Republic</field>
+<field>Taiwan</field>
+<field>Tajikistan</field>
+<field>Tanzania, United Republic of</field>
+<field>Thailand</field>
+<field>Togo</field>
+<field>Tokelau</field>
+<field>Tonga</field>
+<field>Trinidad and Tobago</field>
+<field>Tunisia</field>
+<field>Turkey</field>
+<field>Turkmenistan</field>
+<field>Turks and Caicos Islands</field>
+<field>Tuvalu</field>
+<field>Uganda</field>
+<field>Ukraine</field>
+<field>United Arab Emirates</field>
+<field>United Kingdom</field>
+<field>United States</field>
+<field>United States Minor Outlying Islands</field>
+<field>Uruguay</field>
+<field>Uzbekistan</field>
+<field>Vanuatu</field>
+<field>Venezuela</field>
+<field>Viet Nam</field>
+<field>Virgin Islands, British</field>
+<field>Virgin Islands, U.S.</field>
+<field>Wallis and Futuna</field>
+<field>Western Sahara</field>
+<field>Yemen</field>
+<field>Zambia</field>
+<field>Zimbabwe</field>
+</metadata>
+
+</Metadata>
+
+<Worksheet sheetname='Specimens'>
+
+<rule type='checkInXMLFields' name='EnteredBy' level='warning' list='loginNames'></rule>
+
+<rule type='RequiredColumns' name='RequiredColumns' level='error'>
+<field>Coll_EventID_collector</field>
+<field>EnteredBy</field>
+<field>Specimen_Num_Collector</field>
+<field>HoldingInstitution</field>
+<field>Phylum</field>
+<field>SubProject</field>
+<field>SubSubProject</field>
+</rule>
+
+<rule type='checkInXMLFields' name='SubProject' level='error'>
+<field>SIMINV</field>
+<field>DRISKELL</field>
+<field>SIBARCODE</field>
+</rule>
+
+<rule type='checkInXMLFields' name='LowestTaxonLevel' level='warning'>
+<field>Kingdom</field>
+<field>Phylum</field>
+<field>Subphylum</field>
+<field>Superclass</field>
+<field>Class</field>
+<field>Subclass</field>
+<field>Infraclass</field>
+<field>Superorder</field>
+<field>Ordr</field>
+<field>Suborder</field>
+<field>Infraorder</field>
+<field>Superfamily</field>
+<field>Family</field>
+<field>Subfamily</field>
+<field>Tribe</field>
+<field>Subtribe</field>
+<field>Genus</field>
+<field>Genus_and_Species</field>
+<field>Subgenus</field>
+<field>SpecificEpithet</field>
+<field>SubspecificEpithet</field>
+</rule>
+
+<rule type='checkInXMLFields' name='HoldingInstitution' level='warning'>
+<field>Australian National Insect Collection</field>
+<field>Australian Museum</field>
+<field>Bishop Museum</field>
+<field>Brigham Young University</field>
+<field>California Academy of Sciences</field>
+<field>California State Collection of Arthropods</field>
+<field>Canadian National Collection of Insects, Arachnids and Nematodes</field>
+<field>Criobe</field>
+<field>Duke University</field>
+<field>Emirates Natural History Group</field>
+<field>Essig Museum of Entomology</field>
+<field>Gump Station</field>
+<field>Haddock Lab</field>
+<field>Harry Palm Lab</field>
+<field>Harvard University</field>
+<field>Hochberg Lab</field>
+<field>Illinois Natural History Survey</field>
+<field>Institut de Recherche pour le Développement Herbarium</field>
+<field>Indonesian Biodiversity Research Center</field>
+<field>Instituto Nacional de Pesquisas da Amazônia</field>
+<field>KwaZulu-Natal Museum</field>
+<field>Laboratoire Biométrie et Biologie Evolutive, University Lyon 1</field>
+<field>MBARI</field>
+<field>Mishler Lab</field>
+<field>Moscow State University</field>
+<field>Muséum National d'Histoire Naturelle</field>
+<field>Oxford University Museum of Natural History</field>
+<field>National Museum Bloemfontein</field>
+<field>Natural History Museum of Los Angeles County</field>
+<field>North Carolina State University</field>
+<field>Planes's Lab</field>
+<field>Raffles Museum of Biodiversity Research</field>
+<field>Smithsonian</field>
+<field>Museum of Vertebrate Zoology</field>
+<field>Museum Victoria</field>
+<field>Museums and Art Galleries of the Northern Territories</field>
+<field>Norenburg Lab</field>
+<field>Queensland Museum</field>
+<field>Scripps Institution of Oceanography</field>
+<field>The University and Jepson Herbaria</field>
+<field>Tom Cribb Lab</field>
+<field>Université de Polynésie Française Herbarium</field>
+<field>University of California Museum of Paleontology</field>
+<field>University of Florida</field>
+<field>University of Guelph</field>
+<field>Watling Lab</field>
+<field>Other</field>
+<field>No Voucher</field>
+</rule>
+
+<rule type='checkInXMLFields' name='Phylum' level='warning'>
+<field>Acanthocephala</field>
+<field>Acoelomorpha</field>
+<field>Annelida</field>
+<field>Anthocerotophyta</field>
+<field>Arthropoda</field>
+<field>Brachiopoda</field>
+<field>Bryozoa</field>
+<field>Bryophyta</field>
+<field>Chaetognatha</field>
+<field>Chlorophyta</field>
+<field>Chordata</field>
+<field>Ciliophora</field>
+<field>Cnidaria</field>
+<field>Coniferophyta</field>
+<field>Ctenophora</field>
+<field>Cyanobacteria</field>
+<field>Cycadophyta</field>
+<field>Cycliophora</field>
+<field>Cyrtotreta</field>
+<field>Dikaryomycota</field>
+<field>Echinodermata</field>
+<field>Echiura</field>
+<field>Enteropneusta</field>
+<field>Entoprocta</field>
+<field>Foraminifera</field>
+<field>Gastrotricha</field>
+<field>Glomeromycota</field>
+<field>Gnathostomulida</field>
+<field>Granuloreticulosa</field>
+<field>Hemichordata</field>
+<field>Kinorhyncha</field>
+<field>Loricifera</field>
+<field>Magnoliophyta</field>
+<field>Marchantiophyta</field>
+<field>Metazoa</field>
+<field>Mollusca</field>
+<field>Myxozoa</field>
+<field>Nematoda</field>
+<field>Nematomorpha</field>
+<field>Nemertea</field>
+<field>Onychophora</field>
+<field>Phaeophyta</field>
+<field>Phoronida</field>
+<field>Pinophyta</field>
+<field>Placozoa</field>
+<field>Plantae</field>
+<field>Platyhelminthes</field>
+<field>Porifera</field>
+<field>Priapulida</field>
+<field>Protista</field>
+<field>Pteridophyta</field>
+<field>Pterobranchia</field>
+<field>Rhizaria</field>
+<field>Rhodophyta</field>
+<field>Rotifera</field>
+<field>Sarcomastigophora</field>
+<field>Sipuncula</field>
+<field>Streptophyta</field>
+<field>Tardigrada</field>
+<field>Tracheophyta</field>
+<field>PlaceHolder</field>
+</rule>
+
+<rule type='uniqueValue' name='Specimen_Num_Collector' level='error'></rule>
+
+<rule type='checkMatchingFieldNameInSecondarySheet' name='Coll_EventID_collector' level='warning'></rule>
+
+<rule type='checkLowestTaxonLevel' name='' level='error'></rule>
+
+<rule type='checkTissueColumns' name='' plateName='format_name96' wellNumber='well_number96' level='warning'></rule>
+
+<rule type='uniqueValue' name='format_name96,well_number96' level='error'></rule>
+
+<rule type='checkInXMLFields' name='preservative' level='warning' list='list2'></rule>
+
+<rule type='checkInXMLFields' name='relaxant' level='warning' list='list3'></rule>
+
+<rule type='checkInXMLFields' name='container' level='warning' list='list4'></rule>
+
+<rule type='checkInXMLFields' name='tissue_preservative' level='warning' list='list2'></rule>
+
+<rule type='checkInXMLFields' name='tissue_container' level='warning' list='list4'></rule>
+
+<rule type='checkInXMLFields' name='tissue2_preservative' level='warning' list='list2'></rule>
+
+<rule type='checkInXMLFields' name='tissue2_container' level='warning' list='list4'></rule>
+
+<rule type='checkInXMLFields' name='tissue3_preservative' level='warning' list='list2'></rule>
+
+<rule type='checkInXMLFields' name='tissue3_container' level='warning' list='list4'></rule>
+
+<rule type='checkInXMLFields' name='tissue4_preservative' level='warning' list='list2'></rule>
+
+<rule type='checkInXMLFields' name='tissue4_container' level='warning' list='list4'></rule>
+
+<rule type='checkInXMLFields' name='tissue5_preservative' level='warning' list='list2'></rule>
+
+<rule type='checkInXMLFields' name='tissue5_container' level='warning' list='list4'></rule>
+
+</Worksheet>
+
+<Worksheet sheetname='Collecting_Events'>
+
+<rule type='checkInXMLFields' name='EnteredBy,Collector,Collector2,Collector3,Collector4,Collector5,Collector6,Collector7,Collector8' level='warning' list='loginNames'></rule><rule type='RequiredColumns' name='RequiredColumns' level='error'>
+<field>Coll_EventID_collector</field>
+<field>EnteredBy</field>
+<field>Country</field>
+<field>TaxTeam</field>
+</rule>
+
+<rule type='RequiredColumns' name='RequiredColumns' level='warning'>
+<field>YearCollected</field>
+<field>MonthCollected</field>
+</rule>
+
+<rule type='DwCLatLngChecker'
+        decimalLatitude='DecimalLatitude'
+        decimalLongitude='DecimalLongitude'
+        maxErrorInMeters='MaxErrorInMeters'
+        horizontalDatum='HorizontalDatum' level='warning'></rule>
+
+<rule type='DwCLatLngChecker'
+    decimalLatitude='DecimalLatitude2'
+    decimalLongitude='DecimalLongitude2' level='warning'></rule>
+
+<rule type='uniqueValue' name='Coll_EventID_collector' level='error'></rule>
+
+<rule type='checkInXMLFields' name='HorizontalDatum' level='warning'>
+<field>WGS1984</field>
+<field>NAD1927</field>
+<field>NAD1983</field>
+<field>unknown</field>
+</rule>
+
+<rule type='checkInXMLFields' name='TaxTeam' level='warning'>
+<field>ALGAE</field>
+<field>FUNGI</field>
+<field>PLANTS</field>
+<field>MINV</field>
+<field>OUTREACH</field>
+<field>POC</field>
+<field>MVERTS</field>
+<field>TINV</field>
+<field>TVERTS</field>
+</rule>
+
+<rule type='isNumber' name='MinElevationMeters' level='error'></rule>
+
+<rule type='isNumber' name='MaxElevationMeters' level='error'></rule>
+
+<rule type='isNumber' name='MinDepthMeters' level='error'></rule>
+
+<rule type='isNumber' name='MaxDepthMeters' level='error'></rule>
+
+<rule type='isNumber' name='MaxErrorInMeters' level='error'></rule>
+
+<rule type='isNumber' name='DepthOfBottomMeters' level='error'></rule>
+
+<rule type='isNumber' name='DepthErrorMeters' level='error'></rule>
+
+<rule type='validYearMonthDay' name='YearCollected,MonthCollected,DayCollected' level='warning'></rule>
+
+<rule type='validYearMonthDay' name='YearIdentified,MonthIdentified,DayIdentified' level='warning'></rule>
+
+<rule type='checkInXMLFields' name='Country' level='warning' list='list5'></rule>
+
+</Worksheet>
+
+</Validate>
+
