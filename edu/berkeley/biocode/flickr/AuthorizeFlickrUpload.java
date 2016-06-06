@@ -11,7 +11,9 @@ import com.flickr4java.flickr.auth.Permission;
 import com.flickr4java.flickr.collections.Collection;
 import com.flickr4java.flickr.test.TestInterface;
 import com.flickr4java.flickr.uploader.Uploader;
+
 import edu.berkeley.biocode.utils.BareBonesBrowserLaunch;
+
 import org.scribe.model.Token;
 import org.scribe.model.Verifier;
 import org.w3c.dom.Element;

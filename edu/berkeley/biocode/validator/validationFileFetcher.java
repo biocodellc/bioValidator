@@ -6,6 +6,7 @@ import org.w3c.dom.*;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
+import javax.net.ssl.HttpsURLConnection;
 import javax.swing.*;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -21,6 +22,7 @@ import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 import java.io.*;
+import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
@@ -38,8 +40,8 @@ public class validationFileFetcher extends JButton {
 
     private static URL XMLconfig;
     private static URL XSDconfig;
-    private static URLConnection conn;
-    private static URLConnection xsdconn;
+    private static HttpsURLConnection conn;
+    private static HttpsURLConnection xsdconn;
 
     private Map<String, List<String>> map = new HashMap<String, List<String>>();
     private static int hours = 24;
@@ -95,6 +97,7 @@ public class validationFileFetcher extends JButton {
 
     /**
      * @param clickButton
+     *
      * @return
      */
     public validationFile choose(boolean clickButton) {
@@ -190,6 +193,7 @@ public class validationFileFetcher extends JButton {
 
         try {
             this.XMLconfig = new URL(XMLUrl);
+           String foo = this.XMLconfig.getProtocol();
             this.XSDconfig = new URL(XSDUrl);
         } catch (MalformedURLException e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
@@ -197,9 +201,13 @@ public class validationFileFetcher extends JButton {
 
         // Create Connections
         try {
-            conn = XMLconfig.openConnection();
+
+            // Assuming HTTPS since using Github
+             conn = (HttpsURLConnection) XMLconfig.openConnection();
+            // conn = XMLconfig.openConnection();
             conn.setUseCaches(false);
-            xsdconn = XSDconfig.openConnection();
+             xsdconn = (HttpsURLConnection) XSDconfig.openConnection();
+            // xsdconn = XSDconfig.openConnection();
             xsdconn.setUseCaches(false);
 
         } catch (IOException e) {
@@ -284,7 +292,7 @@ public class validationFileFetcher extends JButton {
         //ucr = new validationFileFetcher(hours, localAbsoluteFilename, new validationFileFetcher());
         //System.out.println("FINAL OUTPUT: " + ucr.getBody());
     }
-
+     /*
     private static boolean internet() {
         // Test to see if there is an internet connection
         if (conn.getLastModified() == 0) {
@@ -295,7 +303,18 @@ public class validationFileFetcher extends JButton {
             return true;
         }
     }
+    */
 
+    private static boolean internet() {
+        try {
+            conn.connect();
+            return true;
+        } catch (MalformedURLException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            return false;
+        }
+    }
     /**
      * Write validationFileFetcher and XSD Schema to Cache
      *

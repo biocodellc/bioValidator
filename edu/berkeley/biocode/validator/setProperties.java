@@ -21,7 +21,7 @@ public class setProperties extends Properties {
 
         // The version of this application should match version of validation schema
         System.setProperty("app.majorversion", "0.9");
-        System.setProperty("app.subversion", "6");
+        System.setProperty("app.subversion", "8");
         System.setProperty("app.version",System.getProperty("app.majorversion")+System.getProperty("app.subversion"));
 
         // bioValidator Component in User Home Directory where we store Cached items
@@ -53,13 +53,14 @@ public class setProperties extends Properties {
         // Validation Schemas XML
         //System.setProperty("app.validationSchemasBaseURL","http://biocode.berkeley.edu/");
         //System.setProperty("app.validationSchemasFileName", "validationSchemas-0.8.xml");
-        System.setProperty("app.validationSchemasBaseURL","http://biovalidator.googlecode.com/svn/trunk/schemas/");
+        //System.setProperty("app.validationSchemasBaseURL","http://biovalidator.googlecode.com/svn/trunk/schemas/");
+        System.setProperty("app.validationSchemasBaseURL","https://raw.githubusercontent.com/biocodellc/bioValidator/master/schemas/");
         System.setProperty("app.validationSchemasFileName", "validationSchemas-0.9.xml");
 
         // Validation Schemas XSD
         //System.setProperty("app.validationXSDSchemasBaseURL","http://biocode.berkeley.edu/");
         //System.setProperty("app.validationXSDSchemasFileName","validationSchemas-0.8.xsd");
-        System.setProperty("app.validationXSDSchemasBaseURL","http://biovalidator.googlecode.com/svn/trunk/schemas/");
+        System.setProperty("app.validationXSDSchemasBaseURL","https://raw.githubusercontent.com/biocodellc/bioValidator/master/schemas/");
         System.setProperty("app.validationXSDSchemasFileName","validationSchemas.xsd");
 
         // Default Validation Schema
