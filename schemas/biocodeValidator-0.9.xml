@@ -1,0 +1,1363 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Validate xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='bioValidator-0.9.xsd'>
+
+<Metadata>
+
+<metadata name='displayFieldsSpreadsheet'>
+<field>Specimen_Num_Collector</field>
+<field>SpecificEpithet</field>
+<field>LowestTaxonLevel</field>
+<field>LowestTaxon</field>
+</metadata>
+
+<metadata name='displayFieldsDB'>
+<field>specimen_num_collector</field>
+<field>scientificname</field>
+<field>lowesttaxonlevel</field>
+<field>lowesttaxon</field>
+</metadata>
+
+<metadata name='list1' alias='projectCode'>
+<field>CMPI</field>
+<field>INDO</field>
+<field>IRLA</field>
+<field>MBIO</field>
+<field>SLAB</field>
+</metadata>
+
+<metadata name='loginNames'>
+<field><![CDATA[(MMA)]]></field>
+<field><![CDATA[A. Cline]]></field>
+<field><![CDATA[A. Deans]]></field>
+<field><![CDATA[A. Deck]]></field>
+<field><![CDATA[A. Farid]]></field>
+<field><![CDATA[A. Ghafoor]]></field>
+<field><![CDATA[A. Gillogly]]></field>
+<field><![CDATA[A. J. Westgate]]></field>
+<field><![CDATA[A. Kirk]]></field>
+<field><![CDATA[A. L. Gardner]]></field>
+<field><![CDATA[A. L. Maltby]]></field>
+<field><![CDATA[A. M. Rajabi]]></field>
+<field><![CDATA[A. Poshkus]]></field>
+<field><![CDATA[A. Short]]></field>
+<field><![CDATA[A. Zaher]]></field>
+<field><![CDATA[Aaron Cohen]]></field>
+<field><![CDATA[Abigail Poray]]></field>
+<field><![CDATA[Abrams]]></field>
+<field><![CDATA[Abril Iñiguez]]></field>
+<field><![CDATA[Adelaide Rhodes]]></field>
+<field><![CDATA[Adrien Derval]]></field>
+<field><![CDATA[Aimee Ellison]]></field>
+<field><![CDATA[Aji Wahyu Anggoro]]></field>
+<field><![CDATA[Akela Kuwahara]]></field>
+<field><![CDATA[Alex Title]]></field>
+<field><![CDATA[Alexander Boice]]></field>
+<field><![CDATA[Alexandra Title]]></field>
+<field><![CDATA[Alexandre Kaulfuss]]></field>
+<field><![CDATA[Alice Alldredge]]></field>
+<field><![CDATA[Allen Collins]]></field>
+<field><![CDATA[Allison Fritts-Penniman]]></field>
+<field><![CDATA[Amanda Windsor]]></field>
+<field><![CDATA[Amaru Heitini]]></field>
+<field><![CDATA[AMIEL]]></field>
+<field><![CDATA[Amy Driskell]]></field>
+<field><![CDATA[Analis Finansi Twindiko]]></field>
+<field><![CDATA[Anania Tangihia]]></field>
+<field><![CDATA[Anders Waren]]></field>
+<field><![CDATA[Andika Ari Wibowo]]></field>
+<field><![CDATA[Andrea Chan]]></field>
+<field><![CDATA[Andrea Crowther]]></field>
+<field><![CDATA[Andréann Grimardias]]></field>
+<field><![CDATA[Andrew Brennan]]></field>
+<field><![CDATA[Andri Kuncoro]]></field>
+<field><![CDATA[Andrianus Sembiring]]></field>
+<field><![CDATA[Angka Mahardini]]></field>
+<field><![CDATA[Anne Duplouy]]></field>
+<field><![CDATA[Annie Maguire]]></field>
+<field><![CDATA[Annie Yau]]></field>
+<field><![CDATA[Annie/Maguire/Irene Chen]]></field>
+<field><![CDATA[Antoine N'Yeurt]]></field>
+<field><![CDATA[Antoine Nancy]]></field>
+<field><![CDATA[Antony Tepau Tiihiva]]></field>
+<field><![CDATA[April Yang]]></field>
+<field><![CDATA[Aquarium of Niagara Falls]]></field>
+<field><![CDATA[Arapari Tamatea]]></field>
+<field><![CDATA[Ariihau Durietz]]></field>
+<field><![CDATA[Ariimoeana Maopi]]></field>
+<field><![CDATA[Armand Allegri]]></field>
+<field><![CDATA[Arthur Anker]]></field>
+<field><![CDATA[Astria Yusmalinda]]></field>
+<field><![CDATA[Aurelia Juncqua]]></field>
+<field><![CDATA[B. A. Peers]]></field>
+<field><![CDATA[B. Ahgook]]></field>
+<field><![CDATA[B. Blinn]]></field>
+<field><![CDATA[B. Brown]]></field>
+<field><![CDATA[B. Collette]]></field>
+<field><![CDATA[B. Fisher]]></field>
+<field><![CDATA[B. H. Thran]]></field>
+<field><![CDATA[B. Habib]]></field>
+<field><![CDATA[B. Howarth]]></field>
+<field><![CDATA[B. J. Stafford]]></field>
+<field><![CDATA[B. K. Schmidt]]></field>
+<field><![CDATA[B. Lentell]]></field>
+<field><![CDATA[B. Lessard]]></field>
+<field><![CDATA[B. Straight]]></field>
+<field><![CDATA[Barbara van Bebber]]></field>
+<field><![CDATA[Becky Wilcox]]></field>
+<field><![CDATA[Belinda Glasby]]></field>
+<field><![CDATA[Ben Carter]]></field>
+<field><![CDATA[Benjamin Ciotti]]></field>
+<field><![CDATA[Benoit Espiau]]></field>
+<field><![CDATA[Bernadette Holthuis]]></field>
+<field><![CDATA[Beth Stern]]></field>
+<field><![CDATA[Bier Kraichak]]></field>
+<field><![CDATA[BioCode IZ team]]></field>
+<field><![CDATA[BioCode IZ/ARMS team]]></field>
+<field><![CDATA[Blais Ah-Sam]]></field>
+<field><![CDATA[Blue Crab Winter Dredge Survey]]></field>
+<field><![CDATA[Brad Wright]]></field>
+<field><![CDATA[Bradley Balukjian]]></field>
+<field><![CDATA[Brandon Endo]]></field>
+<field><![CDATA[BRCINDO]]></field>
+<field><![CDATA[Brent Mishler]]></field>
+<field><![CDATA[Brian Montenegro]]></field>
+<field><![CDATA[Bruce Brandt]]></field>
+<field><![CDATA[BSCIT Staff]]></field>
+<field><![CDATA[Buzzy]]></field>
+<field><![CDATA[C. A. Ruckdeschel]]></field>
+<field><![CDATA[C. A. Shaw]]></field>
+<field><![CDATA[C. Brown]]></field>
+<field><![CDATA[C. Burwell]]></field>
+<field><![CDATA[C. Chaboo]]></field>
+<field><![CDATA[C. Chagas-Vieira]]></field>
+<field><![CDATA[C. Gebhard]]></field>
+<field><![CDATA[C. Griswold]]></field>
+<field><![CDATA[C. J. Angle]]></field>
+<field><![CDATA[C. J. Raxworthy]]></field>
+<field><![CDATA[C. Lambkin]]></field>
+<field><![CDATA[C. M. Kinsey]]></field>
+<field><![CDATA[C. Maier]]></field>
+<field><![CDATA[C. Nogueira]]></field>
+<field><![CDATA[C. O. Handley]]></field>
+<field><![CDATA[C. P. Driscoll]]></field>
+<field><![CDATA[C. Raxworthy]]></field>
+<field><![CDATA[C. Shaw]]></field>
+<field><![CDATA[C. Skinder]]></field>
+<field><![CDATA[C. Vink]]></field>
+<field><![CDATA[C. W. Potter]]></field>
+<field><![CDATA[C. Weirauch]]></field>
+<field><![CDATA[C. Wicker]]></field>
+<field><![CDATA[Caitlin Morrison]]></field>
+<field><![CDATA[Camille Gaynus]]></field>
+<field><![CDATA[Candy Teriinohorai]]></field>
+<field><![CDATA[Carole Baldwin]]></field>
+<field><![CDATA[Carolyn Kobervig]]></field>
+<field><![CDATA[Cécile Debitus]]></field>
+<field><![CDATA[Cecile Gaspar]]></field>
+<field><![CDATA[Cervantes]]></field>
+<field><![CDATA[Charles Lydeard]]></field>
+<field><![CDATA[Charlotte Watson]]></field>
+<field><![CDATA[Chloe Henderson]]></field>
+<field><![CDATA[Chloe Howard]]></field>
+<field><![CDATA[Chloé Raoult]]></field>
+<field><![CDATA[Chris Ahlgren]]></field>
+<field><![CDATA[Chris Glasby]]></field>
+<field><![CDATA[Chris Meyer]]></field>
+<field><![CDATA[Christopher Ludvik]]></field>
+<field><![CDATA[Cindy Haiston]]></field>
+<field><![CDATA[Claire Etienne]]></field>
+<field><![CDATA[Claude Payri]]></field>
+<field><![CDATA[Cohina Murphy]]></field>
+<field><![CDATA[Conner Dibble]]></field>
+<field><![CDATA[Connor Dibble]]></field>
+<field><![CDATA[Coralie Vermenot]]></field>
+<field><![CDATA[Cory Pittman]]></field>
+<field><![CDATA[Craig Moritz]]></field>
+<field><![CDATA[Craig Starger]]></field>
+<field><![CDATA[Cristina Castillo]]></field>
+<field><![CDATA[Curtis Ewing]]></field>
+<field><![CDATA[Curtis Ewing and Andrew Brennan]]></field>
+<field><![CDATA[Custom Authorities]]></field>
+<field><![CDATA[Cygler]]></field>
+<field><![CDATA[D. A. Pabst]]></field>
+<field><![CDATA[D. Amorim]]></field>
+<field><![CDATA[D. Birtele]]></field>
+<field><![CDATA[D. Duffield]]></field>
+<field><![CDATA[D. E. Carr]]></field>
+<field><![CDATA[D. E. Wilson]]></field>
+<field><![CDATA[D. L. Rothwell]]></field>
+<field><![CDATA[D. Painter]]></field>
+<field><![CDATA[D. Pritchard]]></field>
+<field><![CDATA[D. Priyadarsanan]]></field>
+<field><![CDATA[D. Takiya]]></field>
+<field><![CDATA[D. Tree]]></field>
+<field><![CDATA[D. Wolff]]></field>
+<field><![CDATA[D. Yeates]]></field>
+<field><![CDATA[Dan Nedwidek]]></field>
+<field><![CDATA[Dan Polhemus]]></field>
+<field><![CDATA[Daniel Mulcahy]]></field>
+<field><![CDATA[Daniele Macedo]]></field>
+<field><![CDATA[Danielle Desmet]]></field>
+<field><![CDATA[Danielle Pena]]></field>
+<field><![CDATA[Danny Kennedy]]></field>
+<field><![CDATA[Dave Pence]]></field>
+<field><![CDATA[David G. Smith]]></field>
+<field><![CDATA[David Hembry]]></field>
+<field><![CDATA[David Lecchini]]></field>
+<field><![CDATA[David Liittschwager]]></field>
+<field><![CDATA[David Reed]]></field>
+<field><![CDATA[David Touitou]]></field>
+<field><![CDATA[Daysuke Uyeno]]></field>
+<field><![CDATA[Dean Janiak]]></field>
+<field><![CDATA[Deena Garrett]]></field>
+<field><![CDATA[Defy Pada]]></field>
+<field><![CDATA[Derek Cox]]></field>
+<field><![CDATA[Dian Pertiwi]]></field>
+<field><![CDATA[Diana M. Percy]]></field>
+<field><![CDATA[Dita Cahyani]]></field>
+<field><![CDATA[Dominique Ponton]]></field>
+<field><![CDATA[Dutch Schrier]]></field>
+<field><![CDATA[E. A. Leboeuf]]></field>
+<field><![CDATA[E. Almeida]]></field>
+<field><![CDATA[E. Alvim]]></field>
+<field><![CDATA[E. Claridge]]></field>
+<field><![CDATA[E. Cuellar H.]]></field>
+<field><![CDATA[E. D. Mitchell]]></field>
+<field><![CDATA[E. Fisher]]></field>
+<field><![CDATA[E. Hoebeke]]></field>
+<field><![CDATA[E. J. Stetzar]]></field>
+<field><![CDATA[E. K. Kalko]]></field>
+<field><![CDATA[E. P. Nelson]]></field>
+<field><![CDATA[E. Raholimaro]]></field>
+<field><![CDATA[E. Raholimavo]]></field>
+<field><![CDATA[E. Schlinger]]></field>
+<field><![CDATA[E. Stephens]]></field>
+<field><![CDATA[Edward Braun]]></field>
+<field><![CDATA[Edy Setyawan]]></field>
+<field><![CDATA[Eka Maya Kurniasih]]></field>
+<field><![CDATA[Elaine Fok]]></field>
+<field><![CDATA[Elijah Talamas]]></field>
+<field><![CDATA[Elin Claridge]]></field>
+<field><![CDATA[Ellarae Miner]]></field>
+<field><![CDATA[Ellen Strong]]></field>
+<field><![CDATA[Elliot Chan]]></field>
+<field><![CDATA[Elodie Vogel]]></field>
+<field><![CDATA[Emily Hornett]]></field>
+<field><![CDATA[Emily Schmeltzer]]></field>
+<field><![CDATA[Emma Ransome]]></field>
+<field><![CDATA[Emmanuel Roberts]]></field>
+<field><![CDATA[Enoha Riveta]]></field>
+<field><![CDATA[Erdi Lazuardy]]></field>
+<field><![CDATA[Eric Clua]]></field>
+<field><![CDATA[Eric Hester]]></field>
+<field><![CDATA[Erica Spotswood]]></field>
+<field><![CDATA[Erica Warkus]]></field>
+<field><![CDATA[Erin Farr]]></field>
+<field><![CDATA[Evi Saunders]]></field>
+<field><![CDATA[F. Andrews]]></field>
+<field><![CDATA[F. Cresswell]]></field>
+<field><![CDATA[F. del Aguila]]></field>
+<field><![CDATA[F. Geller-Grimm]]></field>
+<field><![CDATA[F. Godoi]]></field>
+<field><![CDATA[F. Grady]]></field>
+<field><![CDATA[F. Hort]]></field>
+<field><![CDATA[F. Kinbag]]></field>
+<field><![CDATA[F. M. Greenwell]]></field>
+<field><![CDATA[F. Parker]]></field>
+<field><![CDATA[F. Rodriguez]]></field>
+<field><![CDATA[F. Ronquist]]></field>
+<field><![CDATA[F. Soffel]]></field>
+<field><![CDATA[F. Turco]]></field>
+<field><![CDATA[Farrah Soffel]]></field>
+<field><![CDATA[Fawn Cambon]]></field>
+<field><![CDATA[Felix Lorenz]]></field>
+<field><![CDATA[Fenuaura Richmond]]></field>
+<field><![CDATA[Filane Aroquiame]]></field>
+<field><![CDATA[Flaminia Tepau Tiihiva]]></field>
+<field><![CDATA[Francesca Leasi]]></field>
+<field><![CDATA[Francis]]></field>
+<field><![CDATA[Franck Lerouvreur]]></field>
+<field><![CDATA[Francois Desinor]]></field>
+<field><![CDATA[Francois Michonneau]]></field>
+<field><![CDATA[Frank Murphy]]></field>
+<field><![CDATA[Franklin Brightwater]]></field>
+<field><![CDATA[Fred Jacq]]></field>
+<field><![CDATA[Fred Pleijel]]></field>
+<field><![CDATA[Freya Goetz]]></field>
+<field><![CDATA[G. Ballmer]]></field>
+<field><![CDATA[G. Brown]]></field>
+<field><![CDATA[G. Courtney]]></field>
+<field><![CDATA[G. Grey]]></field>
+<field><![CDATA[G. J. Jacobs]]></field>
+<field><![CDATA[G. K. Creighton]]></field>
+<field><![CDATA[G. King]]></field>
+<field><![CDATA[G. Leite]]></field>
+<field><![CDATA[G. Monte]]></field>
+<field><![CDATA[G. Monteith]]></field>
+<field><![CDATA[G. Paleudis]]></field>
+<field><![CDATA[G. R. Zug]]></field>
+<field><![CDATA[G. Shurgart]]></field>
+<field><![CDATA[G. Svenson]]></field>
+<field><![CDATA[G. W. Barrett]]></field>
+<field><![CDATA[G. Zhang]]></field>
+<field><![CDATA[Gary Poore]]></field>
+<field><![CDATA[Genelle Harrison]]></field>
+<field><![CDATA[George Hecht]]></field>
+<field><![CDATA[George K. Roderick]]></field>
+<field><![CDATA[George Roderick]]></field>
+<field><![CDATA[Germain Raitini]]></field>
+<field><![CDATA[Gina Carrillo]]></field>
+<field><![CDATA[Gina McGuire]]></field>
+<field><![CDATA[GK-12 April 3 2009 Field Trip]]></field>
+<field><![CDATA[Grand Pittman Natura]]></field>
+<field><![CDATA[Greg Rouse]]></field>
+<field><![CDATA[Gustav Paulay]]></field>
+<field><![CDATA[H-C Liu]]></field>
+<field><![CDATA[H. D. Bradshaw]]></field>
+<field><![CDATA[H. Fearnbach]]></field>
+<field><![CDATA[H. Killian]]></field>
+<field><![CDATA[H. Lanier]]></field>
+<field><![CDATA[H. N. Koopman]]></field>
+<field><![CDATA[H. Noori]]></field>
+<field><![CDATA[H. Pohl]]></field>
+<field><![CDATA[H. Walsh]]></field>
+<field><![CDATA[Hannah Stewart]]></field>
+<field><![CDATA[Harrison Rowan]]></field>
+<field><![CDATA[Harry Palm]]></field>
+<field><![CDATA[Hawaiki Teriinohorai]]></field>
+<field><![CDATA[Heia Teraiharoa]]></field>
+<field><![CDATA[Hélios Collins]]></field>
+<field><![CDATA[Herenui Mahuta]]></field>
+<field><![CDATA[Herman Wirshing]]></field>
+<field><![CDATA[Herton Escobar]]></field>
+<field><![CDATA[Hinanui Fournier]]></field>
+<field><![CDATA[Hitirere Bonno]]></field>
+<field><![CDATA[Hivanui Maiarii]]></field>
+<field><![CDATA[Homai Howel-Tonohiti]]></field>
+<field><![CDATA[Hsiu-Chin Lin]]></field>
+<field><![CDATA[Huna Homai]]></field>
+<field><![CDATA[Hunter Lenihan]]></field>
+<field><![CDATA[I. Ailes]]></field>
+<field><![CDATA[I. G. Phillips]]></field>
+<field><![CDATA[I. Winkler]]></field>
+<field><![CDATA[Ian Copping]]></field>
+<field><![CDATA[Ian Rose]]></field>
+<field><![CDATA[Ian Silver-Gorges]]></field>
+<field><![CDATA[Ian Will]]></field>
+<field><![CDATA[IBRC 2012 class]]></field>
+<field><![CDATA[IBRC 2013 Class]]></field>
+<field><![CDATA[Ichsan Ananda Putra]]></field>
+<field><![CDATA[Ioane McIlroy]]></field>
+<field><![CDATA[Ipeva Gitton]]></field>
+<field><![CDATA[Irene Chen]]></field>
+<field><![CDATA[Itchika Sivaipram]]></field>
+<field><![CDATA[Ivan Glasby]]></field>
+<field><![CDATA[J. Almeida]]></field>
+<field><![CDATA[J. Ascher]]></field>
+<field><![CDATA[J. Barriga]]></field>
+<field><![CDATA[J. Bartlett]]></field>
+<field><![CDATA[J. Cox]]></field>
+<field><![CDATA[J. Evans]]></field>
+<field><![CDATA[J. F. Jacobs]]></field>
+<field><![CDATA[J. Frazier]]></field>
+<field><![CDATA[J. Friedman]]></field>
+<field><![CDATA[J. G. Mead]]></field>
+<field><![CDATA[J. Garner]]></field>
+<field><![CDATA[J. Gillung]]></field>
+<field><![CDATA[J. Hoffman]]></field>
+<field><![CDATA[J. Holly]]></field>
+<field><![CDATA[J. Hort]]></field>
+<field><![CDATA[J. J. Short]]></field>
+<field><![CDATA[J. Jones]]></field>
+<field><![CDATA[J. Lagrange]]></field>
+<field><![CDATA[J. Litz]]></field>
+<field><![CDATA[J. Londt]]></field>
+<field><![CDATA[J. M. Coe]]></field>
+<field><![CDATA[J. M. Rojas]]></field>
+<field><![CDATA[J. M. Ryan]]></field>
+<field><![CDATA[J. Matthews]]></field>
+<field><![CDATA[J. Meltzer]]></field>
+<field><![CDATA[J. O. Matson]]></field>
+<field><![CDATA[J. P. Angle]]></field>
+<field><![CDATA[J. Parish]]></field>
+<field><![CDATA[J. Rafael]]></field>
+<field><![CDATA[J. Recsei]]></field>
+<field><![CDATA[J. Schuster]]></field>
+<field><![CDATA[J. Skevington]]></field>
+<field><![CDATA[J. Smit]]></field>
+<field><![CDATA[J. Smith]]></field>
+<field><![CDATA[J. Vidal]]></field>
+<field><![CDATA[J. Weaver]]></field>
+<field><![CDATA[J.-M. MaldÃ¨s]]></field>
+<field><![CDATA[J.M. Maldès]]></field>
+<field><![CDATA[J.T. Boehm]]></field>
+<field><![CDATA[Jack Roland]]></field>
+<field><![CDATA[Jada Simon White]]></field>
+<field><![CDATA[James Liebherr]]></field>
+<field><![CDATA[James Morin]]></field>
+<field><![CDATA[James Russell]]></field>
+<field><![CDATA[James Thomas]]></field>
+<field><![CDATA[Jamie Whitacre]]></field>
+<field><![CDATA[Jean Letournaux]]></field>
+<field><![CDATA[Jean Letourneux]]></field>
+<field><![CDATA[Jean-Francois Butaud]]></field>
+<field><![CDATA[Jean-Louis Menou]]></field>
+<field><![CDATA[Jean-Yves Meyer]]></field>
+<field><![CDATA[Jeff Cordell]]></field>
+<field><![CDATA[Jeff Jones]]></field>
+<field><![CDATA[Jeffrey Hunt]]></field>
+<field><![CDATA[Jeffrey T. Williams]]></field>
+<field><![CDATA[Jeni]]></field>
+<field><![CDATA[Jenna Moore]]></field>
+<field><![CDATA[Jennifer Keliher]]></field>
+<field><![CDATA[Jenny Dreyer]]></field>
+<field><![CDATA[Jerome Petit]]></field>
+<field><![CDATA[Jessica Maciel]]></field>
+<field><![CDATA[Jim Hayward]]></field>
+<field><![CDATA[Jimmy A. McGuire]]></field>
+<field><![CDATA[Jimmy Mornet]]></field>
+<field><![CDATA[Jimmy O'Donnell]]></field>
+<field><![CDATA[Joe C. Spagna]]></field>
+<field><![CDATA[Joel Nitta]]></field>
+<field><![CDATA[Johan Yvelin]]></field>
+<field><![CDATA[John Deck]]></field>
+<field><![CDATA[John Earle]]></field>
+<field><![CDATA[John Houder]]></field>
+<field><![CDATA[John Slapcinsky]]></field>
+<field><![CDATA[Jon Norenburg]]></field>
+<field><![CDATA[Jonas Maravalhas]]></field>
+<field><![CDATA[Jonathan Cambon]]></field>
+<field><![CDATA[Jonathan Delalande]]></field>
+<field><![CDATA[Jonathan Geller]]></field>
+<field><![CDATA[Joseph Poupin]]></field>
+<field><![CDATA[Josua Tuahiva]]></field>
+<field><![CDATA[JUIN]]></field>
+<field><![CDATA[Jules-Marin Lejeune]]></field>
+<field><![CDATA[Julie Grandgirard]]></field>
+<field><![CDATA[Julie Hassen]]></field>
+<field><![CDATA[Julien Grignon]]></field>
+<field><![CDATA[K. Bayless]]></field>
+<field><![CDATA[K. England]]></field>
+<field><![CDATA[K. M. Helgen]]></field>
+<field><![CDATA[K. M. Sayles]]></field>
+<field><![CDATA[K. M. Touhey]]></field>
+<field><![CDATA[K. Miller]]></field>
+<field><![CDATA[K. S. Smith]]></field>
+<field><![CDATA[K. Williams]]></field>
+<field><![CDATA[Kahaia Faatauira]]></field>
+<field><![CDATA[Karen Osborn]]></field>
+<field><![CDATA[Kari Jackson]]></field>
+<field><![CDATA[Kate Hanson]]></field>
+<field><![CDATA[Katie Hendrickson]]></field>
+<field><![CDATA[Katie Knick]]></field>
+<field><![CDATA[Katie Sievers]]></field>
+<field><![CDATA[Kealoha Teriitahi]]></field>
+<field><![CDATA[Keani Lo]]></field>
+<field><![CDATA[Kelly Maro]]></field>
+<field><![CDATA[Keshi Fuller]]></field>
+<field><![CDATA[Kirk Johnson]]></field>
+<field><![CDATA[Kris Netchy]]></field>
+<field><![CDATA[Kristine White]]></field>
+<field><![CDATA[Kyra Schlining]]></field>
+<field><![CDATA[L. A. Gelvin-Innvaer]]></field>
+<field><![CDATA[L. Cezar]]></field>
+<field><![CDATA[L. Collins]]></field>
+<field><![CDATA[L. Gaibou Hogei]]></field>
+<field><![CDATA[L. Gardner]]></field>
+<field><![CDATA[L. Gore]]></field>
+<field><![CDATA[L. H. Emmons]]></field>
+<field><![CDATA[L. J. McLellan]]></field>
+<field><![CDATA[L. Kimsey]]></field>
+<field><![CDATA[L. L. Wong]]></field>
+<field><![CDATA[L. Measures]]></field>
+<field><![CDATA[L. Wunder]]></field>
+<field><![CDATA[La Vonne Englund]]></field>
+<field><![CDATA[Laetitia Plaisance]]></field>
+<field><![CDATA[Lainie Moreux]]></field>
+<field><![CDATA[Laiza Teharuru]]></field>
+<field><![CDATA[Lanna Cheng]]></field>
+<field><![CDATA[Lauren Stefaniak]]></field>
+<field><![CDATA[Lauren Williams]]></field>
+<field><![CDATA[Laurie Penland]]></field>
+<field><![CDATA[Lee Weigt]]></field>
+<field><![CDATA[Leilanie Pangier]]></field>
+<field><![CDATA[Leina ala Hall]]></field>
+<field><![CDATA[Les Watling]]></field>
+<field><![CDATA[Lin Yonglie]]></field>
+<field><![CDATA[Lindsey Tribondeau]]></field>
+<field><![CDATA[Liston]]></field>
+<field><![CDATA[Livia Tetiarahi]]></field>
+<field><![CDATA[Local Fishermen]]></field>
+<field><![CDATA[Louison]]></field>
+<field><![CDATA[Loulin Otime]]></field>
+<field><![CDATA[Lourdes Chamorro]]></field>
+<field><![CDATA[Lucie Billon]]></field>
+<field><![CDATA[Lucie Faulquier]]></field>
+<field><![CDATA[Lydia Baker]]></field>
+<field><![CDATA[Lydia Smith]]></field>
+<field><![CDATA[Lydiane Mattio]]></field>
+<field><![CDATA[M. Bratz]]></field>
+<field><![CDATA[M. C. Baker]]></field>
+<field><![CDATA[M. Cristina Diaz]]></field>
+<field><![CDATA[M. D. Opiang]]></field>
+<field><![CDATA[M. Deyrup]]></field>
+<field><![CDATA[M. Fitch]]></field>
+<field><![CDATA[M. Hauser]]></field>
+<field><![CDATA[M. Hille]]></field>
+<field><![CDATA[M. Irwin]]></field>
+<field><![CDATA[M. Ismail]]></field>
+<field><![CDATA[M. J. Kennedy]]></field>
+<field><![CDATA[M. J. Swarner]]></field>
+<field><![CDATA[M. Jefferies]]></field>
+<field><![CDATA[M. Juma]]></field>
+<field><![CDATA[M. Klope]]></field>
+<field><![CDATA[M. Kotrba]]></field>
+<field><![CDATA[M. L. Socha]]></field>
+<field><![CDATA[M. Millar]]></field>
+<field><![CDATA[M. Moore]]></field>
+<field><![CDATA[M. Mostovski]]></field>
+<field><![CDATA[M. P. Hare]]></field>
+<field><![CDATA[M. R. Romo]]></field>
+<field><![CDATA[M. Ratnaswamy]]></field>
+<field><![CDATA[M. Schwartz]]></field>
+<field><![CDATA[M. Scott Jones]]></field>
+<field><![CDATA[M. Terry]]></field>
+<field><![CDATA[M. Thomas]]></field>
+<field><![CDATA[M. van Dam]]></field>
+<field><![CDATA[M. W. Varn]]></field>
+<field><![CDATA[M. Whiting]]></field>
+<field><![CDATA[Machel Malay]]></field>
+<field><![CDATA[Maeva Besson]]></field>
+<field><![CDATA[Mahinui Russel]]></field>
+<field><![CDATA[Maire Pean]]></field>
+<field><![CDATA[Malu Yoshida]]></field>
+<field><![CDATA[Mandy Bemis]]></field>
+<field><![CDATA[Manea Selig]]></field>
+<field><![CDATA[Manutea Couterel]]></field>
+<field><![CDATA[Marama Persin]]></field>
+<field><![CDATA[Marc Fabresse]]></field>
+<field><![CDATA[Marcus Vaitu]]></field>
+<field><![CDATA[Margarita Hadjistylli]]></field>
+<field><![CDATA[Margotte Genoud]]></field>
+<field><![CDATA[Maria Tonione]]></field>
+<field><![CDATA[Maria Zizka]]></field>
+<field><![CDATA[Marie Fourdrigniez]]></field>
+<field><![CDATA[Marie-Catherine Bosselier]]></field>
+<field><![CDATA[Marine Mammal Stranding Center]]></field>
+<field><![CDATA[Marjorie Saillan]]></field>
+<field><![CDATA[Mark Little]]></field>
+<field><![CDATA[Mart]]></field>
+<field><![CDATA[Marta deMaintenon]]></field>
+<field><![CDATA[Martien Baars]]></field>
+<field><![CDATA[Maruatea Fanaurai]]></field>
+<field><![CDATA[Masriana]]></field>
+<field><![CDATA[Mathilde Williams]]></field>
+<field><![CDATA[Matohi Pitoura]]></field>
+<field><![CDATA[Matt Buffington]]></field>
+<field><![CDATA[Matt McElroy]]></field>
+<field><![CDATA[Matteo Garbelotto]]></field>
+<field><![CDATA[Matthias Vignon]]></field>
+<field><![CDATA[Matthieu Leray]]></field>
+<field><![CDATA[Maxime Beraud]]></field>
+<field><![CDATA[Maxime Galerne]]></field>
+<field><![CDATA[Maya deVries]]></field>
+<field><![CDATA[MD Department of Natural Resources]]></field>
+<field><![CDATA[Meaghan Parker]]></field>
+<field><![CDATA[Megan Wallis]]></field>
+<field><![CDATA[Melissa Frey]]></field>
+<field><![CDATA[Melissa Nadin]]></field>
+<field><![CDATA[Melissa Prybis]]></field>
+<field><![CDATA[Melissa Spitler]]></field>
+<field><![CDATA[Menelaos Stavrinides]]></field>
+<field><![CDATA[Michael Gates]]></field>
+<field><![CDATA[Michael Goodison]]></field>
+<field><![CDATA[Michael Shapiro]]></field>
+<field><![CDATA[Michael Vamstad]]></field>
+<field><![CDATA[Michel Maihi]]></field>
+<field><![CDATA[Michel Veuille]]></field>
+<field><![CDATA[Michele Weber]]></field>
+<field><![CDATA[Michelle Weber]]></field>
+<field><![CDATA[Midge Kramer]]></field>
+<field><![CDATA[Mihiarii Lowgreen]]></field>
+<field><![CDATA[Mike Hickerson]]></field>
+<field><![CDATA[Mike Trizna]]></field>
+<field><![CDATA[Milada Tehono]]></field>
+<field><![CDATA[MINV 2009 Team]]></field>
+<field><![CDATA[MINV 2010 Team]]></field>
+<field><![CDATA[Mirabelle Raparii]]></field>
+<field><![CDATA[Misty Roland]]></field>
+<field><![CDATA[Moemoe Vahirua]]></field>
+<field><![CDATA[Molly Wright]]></field>
+<field><![CDATA[Muhammad Dailami]]></field>
+<field><![CDATA[Muhammad Zoel Ikram Noer]]></field>
+<field><![CDATA[Myra Shulman]]></field>
+<field><![CDATA[N. Allan]]></field>
+<field><![CDATA[N. Bernal]]></field>
+<field><![CDATA[N. Ordonez-Garza]]></field>
+<field><![CDATA[N. Rocha S.]]></field>
+<field><![CDATA[N. Starick]]></field>
+<field><![CDATA[N. Woodman]]></field>
+<field><![CDATA[Nancy Knowlton]]></field>
+<field><![CDATA[Narendra Putra]]></field>
+<field><![CDATA[Natalie Mary]]></field>
+<field><![CDATA[Natalie Reeder]]></field>
+<field><![CDATA[Nathalie Machon]]></field>
+<field><![CDATA[Nathalie Mary]]></field>
+<field><![CDATA[Nathalie Uhl]]></field>
+<field><![CDATA[Neil Davies]]></field>
+<field><![CDATA[Nerida Wilson]]></field>
+<field><![CDATA[New England Aquarium]]></field>
+<field><![CDATA[Niamh Redmond]]></field>
+<field><![CDATA[Nicholas Fletcher]]></field>
+<field><![CDATA[Nick Fletcher]]></field>
+<field><![CDATA[Nick Porch]]></field>
+<field><![CDATA[Nicolas Buray]]></field>
+<field><![CDATA[Nicolas Hubert]]></field>
+<field><![CDATA[Nicole Gravier-Bonnet]]></field>
+<field><![CDATA[NMFS]]></field>
+<field><![CDATA[NMFS-Beaufort]]></field>
+<field><![CDATA[Norm Woodley]]></field>
+<field><![CDATA[Novianto Hary Adiatmaja]]></field>
+<field><![CDATA[NV Whelan]]></field>
+<field><![CDATA[O. Stevens]]></field>
+<field><![CDATA[Oka Pujawan]]></field>
+<field><![CDATA[Oliver Flint]]></field>
+<field><![CDATA[Olivia Cohen]]></field>
+<field><![CDATA[Olivia Walton]]></field>
+<field><![CDATA[Olivier Gargominy]]></field>
+<field><![CDATA[Onny Nurrahman]]></field>
+<field><![CDATA[Oris Sanjur]]></field>
+<field><![CDATA[Oscar Gavira]]></field>
+<field><![CDATA[P. Bouchard]]></field>
+<field><![CDATA[P. C. Beamish]]></field>
+<field><![CDATA[P. Dias]]></field>
+<field><![CDATA[P. Grootaert]]></field>
+<field><![CDATA[P. Kerr]]></field>
+<field><![CDATA[P. Kreohler]]></field>
+<field><![CDATA[P. Kroehler]]></field>
+<field><![CDATA[P. Pynenberg]]></field>
+<field><![CDATA[P. Rhymer]]></field>
+<field><![CDATA[P. Skelley]]></field>
+<field><![CDATA[P. Stevens]]></field>
+<field><![CDATA[P. T. Martone]]></field>
+<field><![CDATA[Parker]]></field>
+<field><![CDATA[Pascal Titifa]]></field>
+<field><![CDATA[Pascal Ung]]></field>
+<field><![CDATA[Patricia Gómez]]></field>
+<field><![CDATA[Patrick Plantard]]></field>
+<field><![CDATA[Paul Barber]]></field>
+<field><![CDATA[Paul Delaney]]></field>
+<field><![CDATA[Paul Richardson]]></field>
+<field><![CDATA[PERCEVAL]]></field>
+<field><![CDATA[Peter T. Oboyski]]></field>
+<field><![CDATA[Petersen]]></field>
+<field><![CDATA[Phil Bock]]></field>
+<field><![CDATA[Philippe Bacchet]]></field>
+<field><![CDATA[Philippe Bachet]]></field>
+<field><![CDATA[Philippe Bouchet]]></field>
+<field><![CDATA[Phillippe Bacchet]]></field>
+<field><![CDATA[Pierre Sasal]]></field>
+<field><![CDATA[Pierre-Yves Cousteau]]></field>
+<field><![CDATA[Princess Gilbert]]></field>
+<field><![CDATA[Punua Terooatea]]></field>
+<field><![CDATA[R. A. Blaylock]]></field>
+<field><![CDATA[R. Aalbu]]></field>
+<field><![CDATA[R. Albul]]></field>
+<field><![CDATA[R. B. Clapp]]></field>
+<field><![CDATA[R. Burley]]></field>
+<field><![CDATA[R. C. Schad]]></field>
+<field><![CDATA[R. C. Schoelkopf]]></field>
+<field><![CDATA[R. Cavichioli]]></field>
+<field><![CDATA[R. D. Fisher]]></field>
+<field><![CDATA[R. Dalton]]></field>
+<field><![CDATA[R. E. Jones]]></field>
+<field><![CDATA[R. E. LoPiccolo]]></field>
+<field><![CDATA[R. Flowers]]></field>
+<field><![CDATA[R. Freitas-Silva]]></field>
+<field><![CDATA[R. HarinHala]]></field>
+<field><![CDATA[R. I. Crombie]]></field>
+<field><![CDATA[R. M. Timm]]></field>
+<field><![CDATA[R. Machado]]></field>
+<field><![CDATA[R. Marchant]]></field>
+<field><![CDATA[R. Marraccino]]></field>
+<field><![CDATA[R. Meier]]></field>
+<field><![CDATA[R. N. Fisher]]></field>
+<field><![CDATA[R. Nawojchik]]></field>
+<field><![CDATA[R. P. Eckerlin]]></field>
+<field><![CDATA[R. Stephens]]></field>
+<field><![CDATA[R. Tegge]]></field>
+<field><![CDATA[R. Vieira]]></field>
+<field><![CDATA[R. Wharton]]></field>
+<field><![CDATA[R. Yinger]]></field>
+<field><![CDATA[R. Zamorand]]></field>
+<field><![CDATA[Rahiti Hunter]]></field>
+<field><![CDATA[Raianu Estebe]]></field>
+<field><![CDATA[Raimana Teuraurii]]></field>
+<field><![CDATA[Rainui Teriinohorai]]></field>
+<field><![CDATA[Raphael Witson-Williams]]></field>
+<field><![CDATA[Rauhotu Autai]]></field>
+<field><![CDATA[Rautea Vongue]]></field>
+<field><![CDATA[Rautere Teharuru]]></field>
+<field><![CDATA[Ravahere Nehemia]]></field>
+<field><![CDATA[Ravahere Taputuarai]]></field>
+<field><![CDATA[Rebecca Johnson]]></field>
+<field><![CDATA[Rene Galzin]]></field>
+<field><![CDATA[Reo Terai]]></field>
+<field><![CDATA[Richard Pyle]]></field>
+<field><![CDATA[Rick Hochberg]]></field>
+<field><![CDATA[Rick Osman]]></field>
+<field><![CDATA[Rico Haring]]></field>
+<field><![CDATA[Rikki Dunsmore]]></field>
+<field><![CDATA[Rita Rachmawati]]></field>
+<field><![CDATA[Rizki Wulandari]]></field>
+<field><![CDATA[Rob Adlard]]></field>
+<field><![CDATA[Rob Lasley]]></field>
+<field><![CDATA[Rob Whitten]]></field>
+<field><![CDATA[Robby Teuira]]></field>
+<field><![CDATA[Robert Adland]]></field>
+<field><![CDATA[Robert Aguilar]]></field>
+<field><![CDATA[Robert Fisher]]></field>
+<field><![CDATA[Robert Kula]]></field>
+<field><![CDATA[Robin Pouteau]]></field>
+<field><![CDATA[Rod Bray]]></field>
+<field><![CDATA[Rodney Bray]]></field>
+<field><![CDATA[Roger Sant]]></field>
+<field><![CDATA[Rogo Agnie]]></field>
+<field><![CDATA[Romain Causse]]></field>
+<field><![CDATA[Ronald Englund]]></field>
+<field><![CDATA[Ronan Dieutegard]]></field>
+<field><![CDATA[Ronesta Zamorano]]></field>
+<field><![CDATA[Rosemary Gillespie]]></field>
+<field><![CDATA[Roxane Lievens]]></field>
+<field><![CDATA[Roy Caldwell]]></field>
+<field><![CDATA[Rudy Horoi]]></field>
+<field><![CDATA[Rury Eprilurahman]]></field>
+<field><![CDATA[Ryan Wilson]]></field>
+<field><![CDATA[Ryuji Machida]]></field>
+<field><![CDATA[S. Blank]]></field>
+<field><![CDATA[S. Bourgeois]]></field>
+<field><![CDATA[S. Brownins]]></field>
+<field><![CDATA[S. Bybee]]></field>
+<field><![CDATA[S. C. Peurach]]></field>
+<field><![CDATA[S. D. Zvalaren]]></field>
+<field><![CDATA[S. G. Barco]]></field>
+<field><![CDATA[S. Gaimari]]></field>
+<field><![CDATA[S. Gardner]]></field>
+<field><![CDATA[S. Geange]]></field>
+<field><![CDATA[S. Godley]]></field>
+<field><![CDATA[S. Knowles]]></field>
+<field><![CDATA[S. M. Goodman]]></field>
+<field><![CDATA[S. Meyer]]></field>
+<field><![CDATA[S. Miller]]></field>
+<field><![CDATA[S. Mooney]]></field>
+<field><![CDATA[S. P. Collins]]></field>
+<field><![CDATA[S. Patris]]></field>
+<field><![CDATA[S. S. Sadove]]></field>
+<field><![CDATA[S. Thurman]]></field>
+<field><![CDATA[S. Winterton]]></field>
+<field><![CDATA[S. Wright]]></field>
+<field><![CDATA[Sadove Okeanos]]></field>
+<field><![CDATA[Sai Wunna Kyi]]></field>
+<field><![CDATA[Samantha Cheng]]></field>
+<field><![CDATA[Sammy Davis]]></field>
+<field><![CDATA[Sarah Bergemann]]></field>
+<field><![CDATA[Sarah McPherson]]></field>
+<field><![CDATA[Sarah Tweedt]]></field>
+<field><![CDATA[Scott Fay]]></field>
+<field><![CDATA[Seabird McKeon]]></field>
+<field><![CDATA[Sean Brady]]></field>
+<field><![CDATA[Serge Gofas]]></field>
+<field><![CDATA[Serge Planes]]></field>
+<field><![CDATA[Shane W Geange]]></field>
+<field><![CDATA[Shane W. Geange]]></field>
+<field><![CDATA[Shannon Kanakaole]]></field>
+<field><![CDATA[Shanshan He]]></field>
+<field><![CDATA[Shanteal Nazario]]></field>
+<field><![CDATA[Sharein El-Tourky]]></field>
+<field><![CDATA[Sharlene Braginton]]></field>
+<field><![CDATA[Shelby E. Boyer]]></field>
+<field><![CDATA[Sherly Xhan]]></field>
+<field><![CDATA[Sherry Reed]]></field>
+<field><![CDATA[Sienna Witthans]]></field>
+<field><![CDATA[SLAB User]]></field>
+<field><![CDATA[Soad]]></field>
+<field><![CDATA[Soto]]></field>
+<field><![CDATA[Stacy Havard]]></field>
+<field><![CDATA[Stephanie Bush]]></field>
+<field><![CDATA[Stephanie Juncqua]]></field>
+<field><![CDATA[Stephen Harris]]></field>
+<field><![CDATA[Steve Haddock]]></field>
+<field><![CDATA[Steve Lingafelter]]></field>
+<field><![CDATA[Steve Stones-Havas]]></field>
+<field><![CDATA[Stocks]]></field>
+<field><![CDATA[Stosh Ozog]]></field>
+<field><![CDATA[Stuart McKamey]]></field>
+<field><![CDATA[Susan Von Thun]]></field>
+<field><![CDATA[Sutra Anjani]]></field>
+<field><![CDATA[Suzanne Vinette]]></field>
+<field><![CDATA[Sylvain Charlat]]></field>
+<field><![CDATA[Sylvain Petek]]></field>
+<field><![CDATA[T. Fabean]]></field>
+<field><![CDATA[T. J. Mcintyre]]></field>
+<field><![CDATA[T. J. Parsons]]></field>
+<field><![CDATA[T. L. Kimmel]]></field>
+<field><![CDATA[T. L. Sullivan]]></field>
+<field><![CDATA[T. M. Duffy]]></field>
+<field><![CDATA[T. Pitchford]]></field>
+<field><![CDATA[T. Stamps]]></field>
+<field><![CDATA[T. Tarifa]]></field>
+<field><![CDATA[Taeger]]></field>
+<field><![CDATA[Tamatea Denarie]]></field>
+<field><![CDATA[Tapunui Adams]]></field>
+<field><![CDATA[Tara Cambon]]></field>
+<field><![CDATA[Tautua Tapotofarerani]]></field>
+<field><![CDATA[Tawnisha Martinez]]></field>
+<field><![CDATA[TDWG User]]></field>
+<field><![CDATA[Teague Costello]]></field>
+<field><![CDATA[Tehaamoana You-Sing]]></field>
+<field><![CDATA[Tehehea Tapotofarerani]]></field>
+<field><![CDATA[Tehere Nehemia]]></field>
+<field><![CDATA[Tehine Tavi]]></field>
+<field><![CDATA[Temanu Teihotu]]></field>
+<field><![CDATA[Temauri Vaimeho]]></field>
+<field><![CDATA[Tepoea Taata]]></field>
+<field><![CDATA[Tereroa Tereitua]]></field>
+<field><![CDATA[Teretini Teihotaata]]></field>
+<field><![CDATA[Terika Gillot]]></field>
+<field><![CDATA[Terry Gosliner]]></field>
+<field><![CDATA[Teschendorf]]></field>
+<field><![CDATA[Tevero Purotu]]></field>
+<field><![CDATA[Thibault Ramage]]></field>
+<field><![CDATA[Thomas Cribb]]></field>
+<field><![CDATA[Thomas Henry]]></field>
+<field><![CDATA[Tiara Moore]]></field>
+<field><![CDATA[Tiare Brenda]]></field>
+<field><![CDATA[Tiarii Papara]]></field>
+<field><![CDATA[Tikanui Smith]]></field>
+<field><![CDATA[Timeri Thieme]]></field>
+<field><![CDATA[Timothée Lejeune]]></field>
+<field><![CDATA[Tipari Haumani]]></field>
+<field><![CDATA[Tito Lotufo]]></field>
+<field><![CDATA[Titouan Bernicot]]></field>
+<field><![CDATA[Tiva Sogado]]></field>
+<field><![CDATA[TJ Yockachonis]]></field>
+<field><![CDATA[Todd Osmundson]]></field>
+<field><![CDATA[Tom Adam]]></field>
+<field><![CDATA[Tom Cribb]]></field>
+<field><![CDATA[Torea Tamaehu]]></field>
+<field><![CDATA[Torsten Dikow]]></field>
+<field><![CDATA[Touhiti Smidt]]></field>
+<field><![CDATA[Tyler McCraney]]></field>
+<field><![CDATA[Ucu Arbi]]></field>
+<field><![CDATA[V. 1. Nmfs Necropsy Cruise]]></field>
+<field><![CDATA[V. Chavez C.]]></field>
+<field><![CDATA[V. G. Thayer]]></field>
+<field><![CDATA[V. Jacinto]]></field>
+<field><![CDATA[V. Pacheco]]></field>
+<field><![CDATA[Vahinenui Lucas]]></field>
+<field><![CDATA[Vaiarii Raoulx]]></field>
+<field><![CDATA[Vaimiti Eperania]]></field>
+<field><![CDATA[Vainatea Ti Paon]]></field>
+<field><![CDATA[Vairani Barff]]></field>
+<field><![CDATA[Vaiti Germain]]></field>
+<field><![CDATA[Vanessa Blair Lovenburg]]></field>
+<field><![CDATA[Vanessa Lovenburg]]></field>
+<field><![CDATA[Vanessa Messmer]]></field>
+<field><![CDATA[Vetea Liao]]></field>
+<field><![CDATA[Viacheslav Ivanenko]]></field>
+<field><![CDATA[Victoria Hosford]]></field>
+<field><![CDATA[Victoria Morgan]]></field>
+<field><![CDATA[Viliame Pita Waqalevu]]></field>
+<field><![CDATA[VIMS Dredge Survey]]></field>
+<field><![CDATA[VIMS Trawl Survey]]></field>
+<field><![CDATA[Vinnie Moriarity]]></field>
+<field><![CDATA[Virginia Institute of Marine Science]]></field>
+<field><![CDATA[Virginia Marine Science Museum]]></field>
+<field><![CDATA[Viteo Liao]]></field>
+<field><![CDATA[W. A. McLellan]]></field>
+<field><![CDATA[W. Bulmer]]></field>
+<field><![CDATA[W. C. Wozencraft]]></field>
+<field><![CDATA[W. Cook]]></field>
+<field><![CDATA[W. F. Perrin]]></field>
+<field><![CDATA[W. Hwang]]></field>
+<field><![CDATA[W. J. Bowen]]></field>
+<field><![CDATA[W. J. Walton]]></field>
+<field><![CDATA[W. Jones]]></field>
+<field><![CDATA[W. M. Swingle]]></field>
+<field><![CDATA[W. Reynolds]]></field>
+<field><![CDATA[W. Steiner]]></field>
+<field><![CDATA[Wallis Tribondeau]]></field>
+<field><![CDATA[Wang Dengfu]]></field>
+<field><![CDATA[Wayan Dedieu]]></field>
+<field><![CDATA[Weimea Taputu]]></field>
+<field><![CDATA[Wendy Fanaurai]]></field>
+<field><![CDATA[Williams Teata]]></field>
+<field><![CDATA[Willow Jorgensen]]></field>
+<field><![CDATA[Win Zaw Lhon]]></field>
+<field><![CDATA[Woody Lee]]></field>
+<field><![CDATA[Wuthicahi Kwanjam]]></field>
+<field><![CDATA[Yannick Chancerelle]]></field>
+<field><![CDATA[Yasunori Kano]]></field>
+<field><![CDATA[Yolande Vahirua]]></field>
+<field><![CDATA[Yuliana Fitri Syamsuni]]></field>
+<field><![CDATA[Zacharie Huber]]></field>
+<field><![CDATA[Zackary Shima]]></field>
+</metadata>
+
+<metadata name='list2' alias='preservative'>
+<field>10% formalin</field>
+<field>10% formalin and 75% ethanol</field>
+<field>100% ethanol</field>
+<field><![CDATA[75% ethanol]]></field>
+<field><![CDATA[80% ethanol]]></field>
+<field><![CDATA[80% isopropanol]]></field>
+<field><![CDATA[90% ethanol]]></field>
+<field><![CDATA[95% ethanol]]></field>
+<field><![CDATA[96% ethanol]]></field>
+<field><![CDATA[block]]></field>
+<field><![CDATA[Bouin's fixative]]></field>
+<field><![CDATA[DMSO]]></field>
+<field><![CDATA[dry]]></field>
+<field><![CDATA[ethanol]]></field>
+<field><![CDATA[formalin]]></field>
+<field><![CDATA[formalin and 75% ethanol]]></field>
+<field><![CDATA[formalin and 95% ethanol]]></field>
+<field><![CDATA[frozen formalin]]></field>
+<field><![CDATA[FTA paper]]></field>
+<field><![CDATA[glutaraldehyde]]></field>
+<field><![CDATA[leash]]></field>
+<field><![CDATA[liquid nitrogen]]></field>
+<field><![CDATA[Longmire's solution]]></field>
+<field><![CDATA[M2 buffer]]></field>
+<field><![CDATA[none (for -20)]]></field>
+<field><![CDATA[none (for -80)]]></field>
+<field><![CDATA[osmium tetroxide]]></field>
+<field><![CDATA[RNAlater]]></field>
+<field><![CDATA[silica gel]]></field>
+</metadata>
+
+<metadata name='list3' alias='relaxant'>
+<field><![CDATA[chloretone]]></field>
+<field><![CDATA[clove oil]]></field>
+<field><![CDATA[ethyl acetate]]></field>
+<field><![CDATA[ethylene glycol]]></field>
+<field><![CDATA[freezer]]></field>
+<field><![CDATA[frozen]]></field>
+<field><![CDATA[ice]]></field>
+<field><![CDATA[Kibble]]></field>
+<field><![CDATA[menthol]]></field>
+<field><![CDATA[menthol]]></field>
+<field><![CDATA[MgCl]]></field>
+<field><![CDATA[nicotine]]></field>
+<field><![CDATA[propylene phenoxitol]]></field>
+<field><![CDATA[refrigeration]]></field>
+<field><![CDATA[Tricaine]]></field>
+</metadata>
+
+<metadata name='list4' alias='container'>
+<field><![CDATA[0.65 eppendorf]]></field>
+<field>1.2 ul Cryovial</field>
+<field>1.4 ml TrackMate 2D barcoded storage tube</field>
+<field>1.5 Eppindorf Tube</field>
+<field>15 ml Falcon Tube</field>
+<field><![CDATA[2 ml 96 well assay block]]></field>
+<field><![CDATA[2.0 ml Cryovial]]></field>
+<field><![CDATA[2.0 ul Cryovial]]></field>
+<field><![CDATA[2.5 ml biopsy vial]]></field>
+<field><![CDATA[50 ml Falcon Tube]]></field>
+<field><![CDATA[bag in ziploc with silica gel]]></field>
+<field><![CDATA[FTA 96 well sheet]]></field>
+<field><![CDATA[glass vial]]></field>
+<field><![CDATA[microscope_slide]]></field>
+<field><![CDATA[Whirlpack]]></field>
+</metadata>
+
+<metadata name='list5' alias='Country'>
+<field><![CDATA[]]></field>
+<field><![CDATA[Alaska]]></field>
+<field><![CDATA[American Samoa]]></field>
+<field><![CDATA[Angola]]></field>
+<field><![CDATA[Antarctica]]></field>
+<field><![CDATA[Antarctica Sub]]></field>
+<field><![CDATA[Antigua]]></field>
+<field><![CDATA[Argentina]]></field>
+<field><![CDATA[Australia]]></field>
+<field><![CDATA[Bahamas]]></field>
+<field><![CDATA[Belize]]></field>
+<field><![CDATA[Bolivia]]></field>
+<field><![CDATA[Brazil]]></field>
+<field><![CDATA[British Colombia]]></field>
+<field><![CDATA[CCFZ]]></field>
+<field><![CDATA[Chile]]></field>
+<field><![CDATA[China]]></field>
+<field><![CDATA[Colombia]]></field>
+<field><![CDATA[Cook Islands]]></field>
+<field><![CDATA[Costa Rica]]></field>
+<field><![CDATA[Djibouti]]></field>
+<field><![CDATA[Dominica]]></field>
+<field><![CDATA[Ecuador]]></field>
+<field><![CDATA[Egypt]]></field>
+<field><![CDATA[Eritrea]]></field>
+<field><![CDATA[Fiji]]></field>
+<field><![CDATA[France]]></field>
+<field><![CDATA[French Guiana]]></field>
+<field><![CDATA[French Polynesia]]></field>
+<field><![CDATA[Gabon]]></field>
+<field><![CDATA[Galapagos]]></field>
+<field><![CDATA[GalapagosOG]]></field>
+<field><![CDATA[Germany]]></field>
+<field><![CDATA[Greenland]]></field>
+<field><![CDATA[Guadeloupe]]></field>
+<field><![CDATA[Guatemala]]></field>
+<field><![CDATA[Guyana]]></field>
+<field><![CDATA[Hawaii]]></field>
+<field><![CDATA[Honduras]]></field>
+<field><![CDATA[India]]></field>
+<field><![CDATA[Indonesia]]></field>
+<field><![CDATA[Israel]]></field>
+<field><![CDATA[Italy]]></field>
+<field><![CDATA[Japan]]></field>
+<field><![CDATA[Kiribati]]></field>
+<field><![CDATA[Madagascar]]></field>
+<field><![CDATA[Malaysia]]></field>
+<field><![CDATA[Maldives]]></field>
+<field><![CDATA[Marshall Islands]]></field>
+<field><![CDATA[Mauritius]]></field>
+<field><![CDATA[Mexico]]></field>
+<field><![CDATA[Micronesia, Federated States of]]></field>
+<field><![CDATA[Mozambique]]></field>
+<field><![CDATA[Myanmar]]></field>
+<field><![CDATA[Namibia]]></field>
+<field><![CDATA[NESM]]></field>
+<field><![CDATA[Netherlands]]></field>
+<field><![CDATA[Netherlands Antilles]]></field>
+<field><![CDATA[New Caledonia]]></field>
+<field><![CDATA[New Zealand]]></field>
+<field><![CDATA[Nicaragua]]></field>
+<field><![CDATA[North Carolina]]></field>
+<field><![CDATA[Northern Mariana Islands]]></field>
+<field><![CDATA[NW Atlantic]]></field>
+<field><![CDATA[Oman]]></field>
+<field><![CDATA[Palau]]></field>
+<field><![CDATA[Panama]]></field>
+<field><![CDATA[Papua New Guinea]]></field>
+<field><![CDATA[Peru]]></field>
+<field><![CDATA[Philipines]]></field>
+<field><![CDATA[Philippines]]></field>
+<field><![CDATA[Poland]]></field>
+<field><![CDATA[Portugal]]></field>
+<field><![CDATA[Russia]]></field>
+<field><![CDATA[Saint Kitts & Nevis]]></field>
+<field><![CDATA[Samoa]]></field>
+<field><![CDATA[Saudi Arabia]]></field>
+<field><![CDATA[Seychelles]]></field>
+<field><![CDATA[Singapore]]></field>
+<field><![CDATA[Solomon Islands]]></field>
+<field><![CDATA[Somalia]]></field>
+<field><![CDATA[South Africa]]></field>
+<field><![CDATA[South Papua New Guinea]]></field>
+<field><![CDATA[South Vietnam]]></field>
+<field><![CDATA[Spain]]></field>
+<field><![CDATA[Sulawesi]]></field>
+<field><![CDATA[Suriname]]></field>
+<field><![CDATA[Sweden]]></field>
+<field><![CDATA[Taiwan]]></field>
+<field><![CDATA[Tanzania]]></field>
+<field><![CDATA[Thailand]]></field>
+<field><![CDATA[Tonga]]></field>
+<field><![CDATA[Tunisia]]></field>
+<field><![CDATA[Turkey]]></field>
+<field><![CDATA[U.S. Virgin Islands]]></field>
+<field><![CDATA[United Arab Emirates]]></field>
+<field><![CDATA[United Kingdom]]></field>
+<field><![CDATA[United States]]></field>
+<field><![CDATA[unknown]]></field>
+<field><![CDATA[Vanuatu]]></field>
+<field><![CDATA[Venezuela]]></field>
+<field><![CDATA[Vietnam]]></field>
+<field><![CDATA[Virgin Islands]]></field>
+<field><![CDATA[Washington]]></field>
+</metadata>
+
+</Metadata>
+
+<Worksheet sheetname='Specimens'>
+
+<rule type='checkInXMLFields' name='EnteredBy' level='warning' list='loginNames'></rule>
+
+<rule type='RequiredColumns' name='RequiredColumns' level='error'>
+<field>Coll_EventID_collector</field>
+<field>EnteredBy</field>
+<field>Specimen_Num_Collector</field>
+<field>HoldingInstitution</field>
+<field>Phylum</field>
+</rule>
+
+<rule type='checkInXMLFields' name='LowestTaxonLevel' level='warning'>
+<field>Kingdom</field>
+<field>Phylum</field>
+<field>Subphylum</field>
+<field>Superclass</field>
+<field>Class</field>
+<field>Subclass</field>
+<field>Infraclass</field>
+<field>Superorder</field>
+<field>Ordr</field>
+<field>Suborder</field>
+<field>Infraorder</field>
+<field>Superfamily</field>
+<field>Family</field>
+<field>Subfamily</field>
+<field>Tribe</field>
+<field>Subtribe</field>
+<field>Genus</field>
+<field>Genus_and_Species</field>
+<field>Subgenus</field>
+<field>SpecificEpithet</field>
+<field>SubspecificEpithet</field>
+</rule>
+
+<rule type='checkInXMLFields' name='HoldingInstitution' level='warning'>
+<field>Australian National Insect Collection</field>
+<field>Australian Museum</field>
+<field>Bishop Museum</field>
+<field>Brigham Young University</field>
+<field>California Academy of Sciences</field>
+<field>California State Collection of Arthropods</field>
+<field>Canadian National Collection of Insects, Arachnids and Nematodes</field>
+<field>Criobe</field>
+<field>Duke University</field>
+<field>Emirates Natural History Group</field>
+<field>Essig Museum of Entomology</field>
+<field>Gump Station</field>
+<field>Haddock Lab</field>
+<field>Harry Palm Lab</field>
+<field>Harvard University</field>
+<field>Hochberg Lab</field>
+<field>Illinois Natural History Survey</field>
+<field>Institut de Recherche pour le Développement Herbarium</field>
+<field>Indonesian Biodiversity Research Center</field>
+<field>Instituto Nacional de Pesquisas da Amazônia</field>
+<field>KwaZulu-Natal Museum</field>
+<field>Laboratoire Biométrie et Biologie Evolutive, University Lyon 1</field>
+<field>MBARI</field>
+<field>Mishler Lab</field>
+<field>Moscow State University</field>
+<field>Muséum National d'Histoire Naturelle</field>
+<field>Oxford University Museum of Natural History</field>
+<field>National Museum Bloemfontein</field>
+<field>Natural History Museum of Los Angeles County</field>
+<field>North Carolina State University</field>
+<field>Planes's Lab</field>
+<field>Raffles Museum of Biodiversity Research</field>
+<field>Smithsonian</field>
+<field>Museum of Vertebrate Zoology</field>
+<field>Museum Victoria</field>
+<field>Museums and Art Galleries of the Northern Territories</field>
+<field>Norenburg Lab</field>
+<field>Queensland Museum</field>
+<field>Scripps Institution of Oceanography</field>
+<field>The University and Jepson Herbaria</field>
+<field>Tom Cribb Lab</field>
+<field>Université de Polynésie Française Herbarium</field>
+<field>University of California Museum of Paleontology</field>
+<field>University of Florida</field>
+<field>University of Guelph</field>
+<field>Watling Lab</field>
+<field>Other</field>
+<field>No Voucher</field>
+</rule>
+
+<rule type='checkInXMLFields' name='PreparationType' level='warning'>
+<field>card_mount</field>
+<field>envelope</field>
+<field>fluid</field>
+<field>pin</field>
+<field>riker_mount</field>
+<field>slide</field>
+<field>resin_mount</field>
+<field>pin_genitalia_vial</field>
+<field>other</field>
+</rule>
+
+<rule type='checkInXMLFields' name='Phylum' level='warning'>
+<field>Acanthocephala</field>
+<field>Acoelomorpha</field>
+<field>Annelida</field>
+<field>Anthocerotophyta</field>
+<field>Arthropoda</field>
+<field>Brachiopoda</field>
+<field>Bryozoa</field>
+<field>Bryophyta</field>
+<field>Chaetognatha</field>
+<field>Chlorophyta</field>
+<field>Chordata</field>
+<field>Ciliophora</field>
+<field>Cnidaria</field>
+<field>Coniferophyta</field>
+<field>Ctenophora</field>
+<field>Cyanobacteria</field>
+<field>Cycadophyta</field>
+<field>Cycliophora</field>
+<field>Cyrtotreta</field>
+<field>Dikaryomycota</field>
+<field>Echinodermata</field>
+<field>Echiura</field>
+<field>Enteropneusta</field>
+<field>Entoprocta</field>
+<field>Foraminifera</field>
+<field>Gastrotricha</field>
+<field>Glomeromycota</field>
+<field>Gnathostomulida</field>
+<field>Granuloreticulosa</field>
+<field>Hemichordata</field>
+<field>Kinorhyncha</field>
+<field>Loricifera</field>
+<field>Magnoliophyta</field>
+<field>Marchantiophyta</field>
+<field>Metazoa</field>
+<field>Mollusca</field>
+<field>Myxozoa</field>
+<field>Nematoda</field>
+<field>Nematomorpha</field>
+<field>Nemertea</field>
+<field>Onychophora</field>
+<field>Phaeophyta</field>
+<field>Phoronida</field>
+<field>Pinophyta</field>
+<field>Placozoa</field>
+<field>Plantae</field>
+<field>Platyhelminthes</field>
+<field>Porifera</field>
+<field>Priapulida</field>
+<field>Protista</field>
+<field>Pteridophyta</field>
+<field>Pterobranchia</field>
+<field>Rhizaria</field>
+<field>Rhodophyta</field>
+<field>Rotifera</field>
+<field>Sarcomastigophora</field>
+<field>Sipuncula</field>
+<field>Streptophyta</field>
+<field>Tardigrada</field>
+<field>Tracheophyta</field>
+<field>PlaceHolder</field>
+</rule>
+
+<rule type='uniqueValue' name='Specimen_Num_Collector' level='error'></rule>
+
+<rule type='checkMatchingFieldNameInSecondarySheet' name='Coll_EventID_collector' level='warning'></rule>
+
+<rule type='checkLowestTaxonLevel' name='' level='error'></rule>
+
+<rule type='checkTissueColumns' name='' plateName='format_name96' wellNumber='well_number96' level='warning'></rule>
+
+<rule type='uniqueValue' name='format_name96,well_number96' level='error'></rule>
+
+<rule type='checkInXMLFields' name='preservative' level='warning' list='list2'></rule>
+
+<rule type='checkInXMLFields' name='relaxant' level='warning' list='list3'></rule>
+
+<rule type='checkInXMLFields' name='container' level='warning' list='list4'></rule>
+
+<rule type='checkInXMLFields' name='tissue_preservative' level='warning' list='list2'></rule>
+
+<rule type='checkInXMLFields' name='tissue_container' level='warning' list='list4'></rule>
+
+<rule type='checkInXMLFields' name='tissue2_preservative' level='warning' list='list2'></rule>
+
+<rule type='checkInXMLFields' name='tissue2_container' level='warning' list='list4'></rule>
+
+<rule type='checkInXMLFields' name='tissue3_preservative' level='warning' list='list2'></rule>
+
+<rule type='checkInXMLFields' name='tissue3_container' level='warning' list='list4'></rule>
+
+<rule type='checkInXMLFields' name='tissue4_preservative' level='warning' list='list2'></rule>
+
+<rule type='checkInXMLFields' name='tissue4_container' level='warning' list='list4'></rule>
+
+<rule type='checkInXMLFields' name='tissue5_preservative' level='warning' list='list2'></rule>
+
+<rule type='checkInXMLFields' name='tissue5_container' level='warning' list='list4'></rule>
+
+</Worksheet>
+
+<Worksheet sheetname='Collecting_Events'>
+
+<rule type='checkInXMLFields' name='EnteredBy,Collector,Collector2,Collector3,Collector4,Collector5,Collector6,Collector7,Collector8' level='warning' list='loginNames'></rule><rule type='RequiredColumns' name='RequiredColumns' level='error'>
+<field>Coll_EventID_collector</field>
+<field>EnteredBy</field>
+<field>Country</field>
+<field>TaxTeam</field>
+</rule>
+
+<rule type='DwCLatLngChecker'
+        decimalLatitude='DecimalLatitude'
+        decimalLongitude='DecimalLongitude'
+        maxErrorInMeters='MaxErrorInMeters'
+        horizontalDatum='HorizontalDatum' level='warning'></rule>
+
+<rule type='DwCLatLngChecker'
+    decimalLatitude='DecimalLatitude2'
+    decimalLongitude='DecimalLongitude2' level='warning'></rule>
+
+<rule type='uniqueValue' name='Coll_EventID_collector' level='error'></rule>
+
+<rule type='BoundingBox'
+    name='Moorea'
+    decimalLatitude='DecimalLatitude'
+    decimalLongitude='DecimalLongitude' level='warning'>
+         <field>BOX3D(-18.5 -150.8,-16.7 -148.4)</field>
+    </rule>
+
+<rule type='BoundingBox'
+    name='Moorea'
+    decimalLatitude='DecimalLatitude2'
+    decimalLongitude='DecimalLongitude2' level='warning'>
+         <field>BOX3D(-18.5 -150.8,-16.7 -148.4)</field>
+    </rule>
+
+<rule type='checkInXMLFields' name='HorizontalDatum' level='warning'>
+<field>WGS1984</field>
+<field>NAD1927</field>
+<field>NAD1983</field>
+<field>unknown</field>
+</rule>
+
+<rule type='checkInXMLFields' name='TaxTeam' level='warning'>
+<field>ALGAE</field>
+<field>FUNGI</field>
+<field>PLANTS</field>
+<field>MINV</field>
+<field>OUTREACH</field>
+<field>POC</field>
+<field>MVERTS</field>
+<field>TINV</field>
+<field>TVERTS</field>
+</rule>
+
+<rule type='isNumber' name='MinElevationMeters' level='error'></rule>
+
+<rule type='isNumber' name='MaxElevationMeters' level='error'></rule>
+
+<rule type='isNumber' name='MinDepthMeters' level='error'></rule>
+
+<rule type='isNumber' name='MaxDepthMeters' level='error'></rule>
+
+<rule type='isNumber' name='MaxErrorInMeters' level='error'></rule>
+
+<rule type='isNumber' name='DepthOfBottomMeters' level='error'></rule>
+
+<rule type='isNumber' name='DepthErrorMeters' level='error'></rule>
+
+<rule type='validYearMonthDay' name='YearCollected,MonthCollected,DayCollected' level='error'></rule>
+
+<rule type='validYearMonthDay' name='YearIdentified,MonthIdentified,DayIdentified' level='error'></rule>
+
+<rule type='checkInXMLFields' name='Country' level='warning' list='list5'></rule>
+
+</Worksheet>
+
+</Validate>
+
